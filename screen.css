@@ -94,6 +94,10 @@ div.content img, div.content video, div.content audio {
     margin: 0 auto;
 }
 
+div.content a img {
+    margin: 0;
+}
+
 a {
     color: #444;
 }
