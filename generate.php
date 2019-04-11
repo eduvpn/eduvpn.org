@@ -12,12 +12,7 @@ $templateDir = sprintf('%s/views', __DIR__);
 
 $blogTitle = 'eduVPN';
 $blogDescription = 'Safe and Trusted.';
-$blogUrl = 'https://www.tuxed.net/fkooman/blog/';
 $blogAuthor = 'eduVPN';
-
-$blogAuthorTwitter = 'eduvpn_nl';
-$blogAuthorGitHub = 'eduvpn';
-$blogAuthorMail = 'eduVPN.board@commonsconservancy.org';
 
 $loader = new Twig_Loader_Filesystem($templateDir);
 $twig = new Twig_Environment($loader, ['strict_variables' => true]);
