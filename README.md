@@ -10,3 +10,8 @@ To generate the pages on your own system:
     $ php generate.php
     $ firefox output/index.html
 
+To upload to the server (assuming you configured your SSH correctly and have
+the right permissions): 
+
+    $ sh upload.sh
+
