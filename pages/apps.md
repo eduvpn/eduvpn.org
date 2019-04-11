@@ -22,9 +22,11 @@ Download the application using the link below. It will auto update to the latest
 
 ### eduVPN for Android
 
-Available in the Google Play store [here](https://play.google.com/store/apps/details?id=nl.eduvpn.app). See the [Changelog](https://github.com/eduvpn/android/blob/master/CHANGES.md).
+[![Play Store](img/play-store.png)](https://play.google.com/store/apps/details?id=nl.eduvpn.app)
 
-You can also perform a _manual_ installation, but there will be NO automatic updating of the application!
+See the [Changelog](https://github.com/eduvpn/android/blob/master/CHANGES.md). 
+You can also perform a _manual_ installation, but there will be *NO* automatic 
+updating of the application!
 
 *   [1.2.2](https://app.eduvpn.org/android/eduvpn-1.2.2.apk) (2018-05-14)
 *   [1.2.1](https://app.eduvpn.org/android/eduvpn-1.2.1.apk) (2018-05-04)
@@ -43,7 +45,7 @@ You can also perform a _manual_ installation, but there will be NO automatic upd
 
 ### eduVPN for iOS
 
-Available in the iTunes store [here](https://itunes.apple.com/app/eduvpn-client/id1292557340?mt=8).
+[![App Store](img/app-store.png)](https://itunes.apple.com/nl/app/eduvpn-client/id1292557340?mt=8)
 
 ### eduVPN for Linux
 
