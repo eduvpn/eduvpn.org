@@ -12,5 +12,5 @@ Based on the November eduVPN workshop and eduroam best practices & experiences
 a first eduVPN policy draft has been written. The document is available below. 
 Feedback is welcome!
 
-[eduVPN_Compliance_Statement_19122018](../download/eduVPN_Compliance_Statement_19122018.pdf).
+[Download Policy](../download/eduVPN_Compliance_Statement_19122018.pdf)
 

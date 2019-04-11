@@ -119,6 +119,8 @@ p.center {
 code, pre {
     font-family: monospace, monospace;
     font-size: 1em;
+    padding: 0.15em;
+    background-color: #eee;
 }
 
 small {

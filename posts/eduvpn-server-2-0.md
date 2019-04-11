@@ -35,5 +35,4 @@ group membership information after IdP login. Since we moved 2FA to the
 browser, the 2FA trigger is a re-login too and will refresh group membership 
 information.
 
-For more details about the 2.0 changes please see this 
-[email](https://list.surfnet.nl/pipermail/eduvpn-deploy/2019-January/000136.html).
+[More Details](https://list.surfnet.nl/pipermail/eduvpn-deploy/2019-January/000136.html)
