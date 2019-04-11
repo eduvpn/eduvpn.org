@@ -24,4 +24,4 @@ If you find any security vulnerabilities, please contact us immediately.
 
     E7EC E328 4B9D F5D9 546C B1BB B4B0 9729 E93A 4D8B
 
-[Responsible disclosure policy](https://www.surf.nl/responsible-disclosure-surf).
+[Responsible disclosure policy](https://www.surf.nl/en/responsible-disclosure-surf).
