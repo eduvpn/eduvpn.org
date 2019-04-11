@@ -19,8 +19,7 @@ body {
 
     div.header h1, div.header h2 {
         font-size: 250%;
-        line-height: 90px;
-/*        display: inline-block;*/
+        line-height: 75px;
         padding: 0;
         margin: 0;
         text-align: center;
@@ -49,12 +48,12 @@ ul.pages {
 
 ul.pages li {
     list-style: none;
-    display: inline;
-    padding: 0.5em;
+    display: inline-block;
+    padding: 1em;
 }
 
 ul.pages li.active a {
-    background-color: #444;
+    background-color: #888;
     color: #fff;
 }
 
