@@ -1,0 +1,131 @@
+body {
+    font-family: "Helvetica Neue", "Calibri Light", Cantarell, Roboto, sans-serif;
+    color: #444;
+    line-height: 1.6;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #eeeeee;
+    text-align: center;
+    font-size: 1em;
+    max-width: 1000px;
+}
+
+@media (min-width: 1000px) {
+    div.header {
+        background: url(../img/header.jpg) no-repeat;
+        width: 1000px;
+        height: 250px;
+    }
+
+    h1 {
+        font-size: 250%;
+        line-height: 175px;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+p.date {
+    text-align: center;
+}
+
+div.content {
+    text-align: justify;
+    padding: 1em 1.5em;
+    background-color: #fff;
+    border-radius: 0 0 1em 1em;
+}
+
+ul.pages {
+    padding: 0;
+}
+
+ul.pages li {
+    list-style: none;
+    display: inline;
+    padding: 0.5em;
+}
+
+ul.pages li.active a {
+    background-color: #444;
+    color: #fff;
+}
+
+ul.pages li a {
+    background-color: #fff;
+    color: #444;
+    padding: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+ul.index {
+    padding: 0;
+}
+
+ul.index li {
+    list-style: none;
+}
+
+ul.index li {
+    margin: 1em;
+}
+
+div.footer {
+    margin: 0;
+    padding: 0.5em 0;
+    color: #888;
+    font-size: 75%;
+}
+
+div.footer a {
+    color: #888;
+}
+
+div.content img, div.content video, div.content audio {
+    display: block;
+    margin: 0 auto;
+}
+
+a {
+    color: #444;
+}
+
+h2 {
+    text-align: center;
+}
+
+blockquote {
+    margin: 0;
+    background-color: #eee;
+    padding: 0.1em 1em;
+}
+
+table {
+    width: 100%;
+}
+
+p.center {
+    text-align: center;
+}
+
+code, pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+small {
+    color: gray;
+    font-size: 80%;
+}
+
+pre {
+    white-space: pre-wrap;
+    padding: 0.5em 1.5em;
+    background-color: #eee;
+    border-radius: 0.5em;
+}

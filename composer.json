@@ -1,0 +1,6 @@
+{
+    "require": {
+        "michelf/php-markdown": "^1.8",
+        "twig/twig": "^1"
+    }
+}

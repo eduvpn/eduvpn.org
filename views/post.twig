@@ -1,0 +1,24 @@
+{% include 'header.twig' %}
+
+<div class="content">
+
+    <h2>{{ pageTitle|e }}</h2>
+
+    {% if post.published %}
+        <p class="date">
+            <small>{{ post.published|e }}</small>
+        </p>
+    {% endif %}
+
+    {{ post.htmlContent|raw }}
+
+    {% if post.modified %}
+        <p>
+            <small>Last updated on {{ post.modified|e }}</small>
+        </p>
+    {% endif %}
+
+    <p class="center"><small><a href="{{ toRoot}}index.html">Return to Index</a></small></p>
+</div> <!-- /content -->
+
+{% include 'footer.twig' %}

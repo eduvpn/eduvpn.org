@@ -1,0 +1,18 @@
+{% include 'header.twig' %}
+
+<div class="content">
+
+    <h2>{{ pageTitle|e }}</h2>
+    <ul class="index">
+    {% for post in postsList %}
+        {% if post.publish %}
+        <li>
+            <a href="{{ toRoot }}blog/{{post.fileName|e }}">{{ post.title|e }}</a> <small>{{post.published|e }}</small>
+        </li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+
+</div> <!-- /content -->
+
+{% include 'footer.twig' %}
