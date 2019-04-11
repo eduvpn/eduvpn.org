@@ -4,9 +4,9 @@ title: Contact
 
 ## eduVPN Board
 
-Presenting the eduVPN board!
-
 ![Board](img/board.jpg)
+
+Presenting the eduVPN board:
 
 - Tan­gui Coulouarn (chair board, DeiC)
 - Jørgen Qvist (NORDUnet)
