@@ -3,7 +3,7 @@ body {
     color: #444;
     line-height: 1.6;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 1em;
     background-color: #eeeeee;
     text-align: center;
     font-size: 1em;
@@ -92,6 +92,7 @@ div.footer a {
 div.content img, div.content video, div.content audio {
     display: block;
     margin: 0 auto;
+    max-width: 95%;
 }
 
 div.content a img {
