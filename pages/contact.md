@@ -2,19 +2,24 @@
 title: Contact
 ---
 
-![Board](img/board.jpg)
+### Mail
 
-Presenting the eduVPN board:
+[eduvpn-support@lists.geant.org](mailto:eduvpn-support@lists.geant.org)
 
-- Tan­gui Coulouarn (chair board, DeiC)
-- Jørgen Qvist (NORDUnet)
-- Klaas Wieren­ga (GÉANT)
-- Ro­gi­er Spoor (SURFnet)
-- Gui­do Aben (AARNet)
+### IRC
 
-Mail: [eduVPN.board@commonsconservancy.org](eduVPN.board@commonsconservancy.org).
+* [IRC](ircs://chat.freenode.net:6697/#eduvpn) (`ircs://chat.freenode.net:6697/#eduvpn`)
+* [WebChat](https://webchat.freenode.net/?channels=#eduvpn)
 
-## Security
+### GitHub
+
+[https://github.com/eduVPN](https://github.com/eduVPN)
+
+### Twitter
+
+[@eduvpn_nl](https://twitter.com/eduvpn_nl)
+
+### Security
 
 If you find any security vulnerabilities, please contact us immediately at 
 [responsible-disclosure@surf.nl](mailto:responsible-disclosure@surf.nl). See
