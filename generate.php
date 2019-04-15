@@ -105,6 +105,7 @@ usort($postsList, function ($a, $b) {
 $siteIndexPage = $twig->render(
     'index.twig',
     [
+        'unixTime' => time(),
         'toRoot' => '',
         'pagesList' => $pagesList,
         'activePage' => 'index.html',
@@ -119,6 +120,7 @@ $siteIndexPage = $twig->render(
 $blogIndexPage = $twig->render(
     'index.twig',
     [
+        'unixTime' => time(),
         'toRoot' => '../',
         'pagesList' => $pagesList,
         'activePage' => 'index.html',
@@ -135,6 +137,7 @@ foreach ($postsList as $post) {
         $postPage = $twig->render(
             'post.twig',
             [
+                'unixTime' => time(),
                 'toRoot' => '../',
                 'pagesList' => $pagesList,
                 'activePage' => 'index.html',
@@ -154,6 +157,7 @@ foreach ($pagesList as $page) {
         $pagePage = $twig->render(
             'page.twig',
             [
+                'unixTime' => time(),
                 'toRoot' => '',
                 'activePage' => $page['fileName'],
                 'pagesList' => $pagesList,
