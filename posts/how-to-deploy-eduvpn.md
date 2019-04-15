@@ -16,4 +16,4 @@ The steps are:
 2. connect the eduVPN instance to your 
    [SAML federation](https://github.com/eduvpn/documentation/blob/master/SAML.md);
 3. contact [us](mailto:eduvpn-support@lists.geant.org) in order to "get in the 
-   eduVPN app";
+   eduVPN apps";

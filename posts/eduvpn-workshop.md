@@ -3,7 +3,7 @@ title: eduVPN Workshop
 published: 2018-12-18
 ---
 
-In November we organised a two-day eduVPN workshop at SURFnet office in the 
+In November we organized a two-day eduVPN workshop at SURFnet office in the 
 Netherlands. This goal of the workshop was to bring together representatives of 
 NRENs who are currently deploying the service in production and in test and to 
 see how we can work together in the future. Topics addressed during this 
@@ -16,8 +16,8 @@ workshop were:
 - "Requirements and best practices": for security/operations/identity 
   management/monitoring. 
 
-Representatives from the following NRENs attended the workshop: DeIC, AARNet, 
-GÉANT, SURFnet, RENATER, DFN, Uninett ,RENU, CSC, PSNC. A more detailed agenda 
-of the event is shown below:
+Representatives from the following NRENs attended the workshop: DeiC, AARNet, 
+GÉANT, SURFnet, RENATER, DFN, UNINETT, RENU, CSC and PSNC. A more detailed 
+agenda of the event is shown below:
 
 ![eduVPN workshop](../img/eduvpn_workshop_nov18-2.jpg)

@@ -13,8 +13,8 @@ this will create a second federation layer on the VPN level.
 
 ![Android App](../img/backgroundmobile-smallest.jpg)
 
-The android eduVPN app was released  in January and the macOS, Windows app 
-(7,8 and 10) and Linux app are expected in October.
+The android eduVPN app was released in January and the macOS, Windows app 
+(7, 8 and 10) and Linux app are expected in October.
 
 All software, technical documents and generic documentation are published on 
 [GitHub](https://github.com/eduvpn/).
