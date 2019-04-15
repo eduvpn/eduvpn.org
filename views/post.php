@@ -2,11 +2,11 @@
 <?php $this->start('content'); ?>
     <h2><?php echo $this->e($pageTitle); ?></h2>
     <p class="date">
-        <small>Published on <?php echo $this->e($post['published']); ?></small>
+        <small>Published: <?php echo $this->e($post['published']); ?></small>
     </p>
 <?php if ($post['modified']): ?>
     <p>
-        <small>Last updated: <?php echo $this->e($post['modified']); ?></small>
+        <small>Updated: <?php echo $this->e($post['modified']); ?></small>
     </p>
 <?php endif; ?>
     
