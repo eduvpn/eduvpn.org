@@ -4,7 +4,7 @@ body {
     max-width: 900px;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
     div.header {
         padding-top: 1em;
         background: url(../img/header.jpg) no-repeat;
@@ -47,7 +47,6 @@ ul.pages li a {
     padding: 1em;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 10px;
 }
 
 div.content a {
