@@ -185,4 +185,6 @@ foreach (glob(__DIR__.'/download/*') as $imgFile) {
 
 // copy css
 @mkdir($outputDir.'/css');
-copy(__DIR__.'/screen.css', $outputDir.'/css/screen.css');
+foreach (glob(__DIR__.'/css/*') as $cssFile) {
+    copy($cssFile, $outputDir.'/css/'.basename($cssFile));
+}

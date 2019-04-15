@@ -1,49 +1,33 @@
 body {
-    font-family: "Helvetica Neue", "Calibri Light", Cantarell, Roboto, sans-serif;
-    color: #444;
-    line-height: 1.6;
     margin: 0 auto;
-    padding: 0 1em;
     background-color: #eeeeee;
-    text-align: center;
-    font-size: 1em;
-    max-width: 1000px;
+    max-width: 900px;
 }
 
 @media (min-width: 1000px) {
     div.header {
+        padding-top: 1em;
         background: url(../img/header.jpg) no-repeat;
-        width: 1000px;
+        width: 900px;
         height: 250px;
     }
 
     div.header h1, div.header h2 {
-        font-size: 250%;
-        line-height: 75px;
-        padding: 0;
-        margin: 0;
         text-align: center;
         color: #fff;
     }
-
-    div.header h2 {
-        font-size: 150%;
-    }
-}
-
-p.date {
-    text-align: center;
 }
 
 div.content {
     text-align: justify;
     padding: 1em 1.5em;
     background-color: #fff;
-    border-radius: 0 0 1em 1em;
 }
 
 ul.pages {
     padding: 0;
+    margin-top: 3em;
+    text-align: center;
 }
 
 ul.pages li {
@@ -53,7 +37,7 @@ ul.pages li {
 }
 
 ul.pages li.active a {
-    background-color: #888;
+    background-color: #df7f0c;
     color: #fff;
 }
 
@@ -66,23 +50,24 @@ ul.pages li a {
     border-radius: 10px;
 }
 
+div.content a {
+    text-decoration: underline;
+}
+
 ul.index {
     padding: 0;
 }
 
 ul.index li {
     list-style: none;
-}
-
-ul.index li {
-    margin: 1em;
+    margin: 0.5em 0;
 }
 
 div.footer {
-    margin: 0;
-    padding: 0.5em 0;
+    margin: 1.5em 0;
     color: #888;
     font-size: 75%;
+    text-align: center;
 }
 
 div.footer a {
@@ -99,18 +84,18 @@ div.content a img {
     margin: 0;
 }
 
-a {
-    color: #444;
+div.content a {
+    color: #df7f0c;
 }
 
-h2 {
-    text-align: center;
-}
-
-blockquote {
+blockquote, pre {
     margin: 0;
-    background-color: #eee;
-    padding: 0.1em 1em;
+    background-color: #f8f8f8;
+    padding: 1em;
+}
+
+pre {
+    white-space: pre-wrap;
 }
 
 table {
@@ -121,21 +106,7 @@ p.center {
     text-align: center;
 }
 
-code, pre {
-    font-family: monospace, monospace;
-    font-size: 1em;
-    padding: 0.15em;
-    background-color: #eee;
-}
-
 small {
     color: gray;
     font-size: 80%;
-}
-
-pre {
-    white-space: pre-wrap;
-    padding: 0.5em 1.5em;
-    background-color: #eee;
-    border-radius: 0.5em;
 }
