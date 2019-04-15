@@ -1,14 +1,15 @@
 <?php
 
-require_once 'vendor/autoload.php';
+require_once dirname(__DIR__).'/vendor/autoload.php';
+$baseDir = dirname(__DIR__);
 
 use Michelf\MarkdownExtra;
 
-$postDir = sprintf('%s/posts', __DIR__);
-$pageDir = sprintf('%s/pages', __DIR__);
-$outputDir = sprintf('%s/output', __DIR__);
+$postDir = sprintf('%s/posts', $baseDir);
+$pageDir = sprintf('%s/pages', $baseDir);
+$outputDir = sprintf('%s/output', $baseDir);
 $blogOutputDir = sprintf('%s/blog', $outputDir);
-$templateDir = sprintf('%s/views', __DIR__);
+$templateDir = sprintf('%s/views', $baseDir);
 
 $blogTitle = 'eduVPN';
 $blogDescription = 'Safe and Trusted.';
@@ -177,18 +178,18 @@ file_put_contents($blogOutputDir.'/index.html', $blogIndexPage);
 
 // copy img
 @mkdir($outputDir.'/img');
-foreach (glob(__DIR__.'/img/*') as $imgFile) {
+foreach (glob($baseDir.'/img/*') as $imgFile) {
     copy($imgFile, $outputDir.'/img/'.basename($imgFile));
 }
 
 // copy download
 @mkdir($outputDir.'/download');
-foreach (glob(__DIR__.'/download/*') as $imgFile) {
+foreach (glob($baseDir.'/download/*') as $imgFile) {
     copy($imgFile, $outputDir.'/download/'.basename($imgFile));
 }
 
 // copy css
 @mkdir($outputDir.'/css');
-foreach (glob(__DIR__.'/css/*') as $cssFile) {
+foreach (glob($baseDir.'/css/*') as $cssFile) {
     copy($cssFile, $outputDir.'/css/'.basename($cssFile));
 }
