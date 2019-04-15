@@ -1,6 +1,6 @@
 {
     "require": {
-        "michelf/php-markdown": "^1.8",
+        "league/commonmark": "^0.19.1",
         "twig/twig": "^1"
     }
 }

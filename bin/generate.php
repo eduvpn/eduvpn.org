@@ -3,7 +3,7 @@
 require_once dirname(__DIR__).'/vendor/autoload.php';
 $baseDir = dirname(__DIR__);
 
-use Michelf\MarkdownExtra;
+use League\CommonMark\CommonMarkConverter;
 
 $postDir = sprintf('%s/posts', $baseDir);
 $pageDir = sprintf('%s/pages', $baseDir);
@@ -50,9 +50,9 @@ foreach (glob(sprintf('%s/*.md', $pageDir)) as $pageFile) {
     fclose($f);
     $pageOutputFile = basename($pageFile, '.md').'.html';
 
-    $parser = new MarkdownExtra();
+    $converter = new CommonMarkConverter();
     $page = [
-        'htmlContent' => $parser->transform($buffer),
+        'htmlContent' => $converter->convertToHtml($buffer),
         'publish' => isset($pageInfo['publish']) ? 'no' !== $pageInfo['publish'] : true,
         'title' => $pageInfo['title'],
         'fileName' => $pageOutputFile,
@@ -85,10 +85,10 @@ foreach (glob(sprintf('%s/*.md', $postDir)) as $postFile) {
     fclose($f);
     $postOutputFile = basename($postFile, '.md').'.html';
 
-    $parser = new MarkdownExtra();
+    $converter = new CommonMarkConverter();
 
     $blogPost = [
-        'htmlContent' => $parser->transform($buffer),
+        'htmlContent' => $converter->convertToHtml($buffer),
         'description' => isset($postInfo['description']) ? $postInfo['description'] : $postInfo['title'],
         'published' => $postInfo['published'],
         'publish' => isset($postInfo['publish']) ? 'no' !== $postInfo['publish'] : true,
