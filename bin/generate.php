@@ -3,7 +3,10 @@
 require_once dirname(__DIR__).'/vendor/autoload.php';
 $baseDir = dirname(__DIR__);
 
+use fkooman\Tpl\Template;
 use League\CommonMark\CommonMarkConverter;
+use League\CommonMark\Environment;
+use League\CommonMark\Ext\SmartPunct\SmartPunctExtension;
 
 $postDir = sprintf('%s/posts', $baseDir);
 $pageDir = sprintf('%s/pages', $baseDir);
@@ -11,20 +14,33 @@ $outputDir = sprintf('%s/output', $baseDir);
 $blogOutputDir = sprintf('%s/blog', $outputDir);
 $templateDir = sprintf('%s/views', $baseDir);
 
-$blogTitle = 'eduVPN';
-$blogDescription = 'Safe and Trusted';
-$blogAuthor = 'eduVPN';
+@mkdir($outputDir, 0755, true);
+@mkdir($blogOutputDir, 0755, true);
+@mkdir($outputDir.'/img', 0755, true);
+@mkdir($outputDir.'/download', 0755, true);
+@mkdir($outputDir.'/css', 0755, true);
 
-$loader = new Twig_Loader_Filesystem($templateDir);
-$twig = new Twig_Environment($loader, ['strict_variables' => true]);
+// Obtain a pre-configured Environment with all the CommonMark parsers/renderers ready-to-go
+$environment = Environment::createCommonMarkEnvironment();
 
-$dateTime = new DateTime();
+// Add this extension
+$environment->addExtension(new SmartPunctExtension());
+
+// Instantiate the converter engine and start converting some Markdown!
+$converter = new CommonMarkConverter([], $environment);
+
+$templates = new Template([$templateDir]);
+$templates->addDefault(
+    [
+        'blogTitle' => 'eduVPN',
+        'blogDescription' => 'Safe and Trusted',
+        'blogAuthor' => 'eduVPN',
+        'unixTime' => time(),
+    ]
+);
 
 $postsList = [];
 $pagesList = [];
-
-@mkdir($outputDir, 0755, true);
-@mkdir($blogOutputDir, 0755, true);
 
 foreach (glob(sprintf('%s/*.md', $pageDir)) as $pageFile) {
     $pageInfo = [];
@@ -50,10 +66,8 @@ foreach (glob(sprintf('%s/*.md', $pageDir)) as $pageFile) {
     fclose($f);
     $pageOutputFile = basename($pageFile, '.md').'.html';
 
-    $converter = new CommonMarkConverter();
     $page = [
         'htmlContent' => $converter->convertToHtml($buffer),
-        'publish' => isset($pageInfo['publish']) ? 'no' !== $pageInfo['publish'] : true,
         'title' => $pageInfo['title'],
         'fileName' => $pageOutputFile,
     ];
@@ -84,9 +98,6 @@ foreach (glob(sprintf('%s/*.md', $postDir)) as $postFile) {
 
     fclose($f);
     $postOutputFile = basename($postFile, '.md').'.html';
-
-    $converter = new CommonMarkConverter();
-
     $blogPost = [
         'htmlContent' => $converter->convertToHtml($buffer),
         'description' => isset($postInfo['description']) ? $postInfo['description'] : $postInfo['title'],
@@ -103,50 +114,32 @@ usort($postsList, function ($a, $b) {
     return strtotime($a['published']) < strtotime($b['published']);
 });
 
-$siteIndexPage = $twig->render(
-    'index.twig',
+// add blog index page
+array_unshift(
+    $pagesList,
     [
-        'unixTime' => time(),
-        'toRoot' => '',
-        'pagesList' => $pagesList,
-        'activePage' => 'index.html',
-        'postsList' => $postsList,
-        'pageTitle' => 'Blog',
-        'blogTitle' => $blogTitle,
-        'blogDescription' => $blogDescription,
-        'blogAuthor' => $blogAuthor,
-    ]
-);
-
-$blogIndexPage = $twig->render(
-    'index.twig',
-    [
-        'unixTime' => time(),
-        'toRoot' => '../',
-        'pagesList' => $pagesList,
-        'activePage' => 'index.html',
-        'postsList' => $postsList,
-        'pageTitle' => 'Blog',
-        'blogTitle' => $blogTitle,
-        'blogDescription' => $blogDescription,
-        'blogAuthor' => $blogAuthor,
+        'htmlContent' => $templates->render(
+            'index',
+            [
+                'postsList' => $postsList,
+            ]
+        ),
+        'title' => 'Blog',
+        'fileName' => 'index.html',
     ]
 );
 
 foreach ($postsList as $post) {
     if ($post['publish']) {
-        $postPage = $twig->render(
-            'post.twig',
+        $postPage = $templates->render(
+            'post',
             [
                 'unixTime' => time(),
-                'toRoot' => '../',
+                'requestRoot' => '../',
                 'pagesList' => $pagesList,
                 'activePage' => 'index.html',
-                'blogTitle' => $blogTitle,
                 'pageTitle' => $post['title'],
                 'post' => $post,
-                'blogDescription' => $blogDescription,
-                'blogAuthor' => $blogAuthor,
             ]
         );
         file_put_contents($blogOutputDir.'/'.$post['fileName'], $postPage);
@@ -154,42 +147,33 @@ foreach ($postsList as $post) {
 }
 
 foreach ($pagesList as $page) {
-    if ($post['publish']) {
-        $pagePage = $twig->render(
-            'page.twig',
-            [
-                'unixTime' => time(),
-                'toRoot' => '',
-                'activePage' => $page['fileName'],
-                'pagesList' => $pagesList,
-                'blogTitle' => $blogTitle,
-                'pageTitle' => $page['title'],
-                'pageContent' => $page,
-                'blogDescription' => $blogDescription,
-                'blogAuthor' => $blogAuthor,
-            ]
-        );
-        file_put_contents($outputDir.'/'.$page['fileName'], $pagePage);
-    }
+    $pagePage = $templates->render(
+        'page',
+        [
+            'unixTime' => time(),
+            'requestRoot' => '',
+            'activePage' => $page['fileName'],
+            'pagesList' => $pagesList,
+            'pageTitle' => $page['title'],
+            'pageContent' => $page,
+        ]
+    );
+    file_put_contents($outputDir.'/'.$page['fileName'], $pagePage);
 }
 
-file_put_contents($outputDir.'/index.html', $siteIndexPage);
-file_put_contents($blogOutputDir.'/index.html', $blogIndexPage);
+//file_put_contents($outputDir.'/index.html', $siteIndexPage);
 
 // copy img
-@mkdir($outputDir.'/img');
 foreach (glob($baseDir.'/img/*') as $imgFile) {
     copy($imgFile, $outputDir.'/img/'.basename($imgFile));
 }
 
 // copy download
-@mkdir($outputDir.'/download');
 foreach (glob($baseDir.'/download/*') as $imgFile) {
     copy($imgFile, $outputDir.'/download/'.basename($imgFile));
 }
 
 // copy css
-@mkdir($outputDir.'/css');
 foreach (glob($baseDir.'/css/*') as $cssFile) {
     copy($cssFile, $outputDir.'/css/'.basename($cssFile));
 }

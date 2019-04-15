@@ -6,15 +6,10 @@ return PhpCsFixer\Config::create()
         [
             '@Symfony' => true,
             '@Symfony:risky' => true,
-            'ordered_imports' => true,
-            'ordered_class_elements' => true,
-            'array_syntax' => ['syntax' => 'short'],
-            'phpdoc_order' => true,
+            '@PhpCsFixer' => true,
+            '@PhpCsFixer:risky' => true,
             'phpdoc_no_empty_return' => false,
-            'phpdoc_add_missing_param_annotation' => true,
-            'strict_comparison' => true,
-            'strict_param' => true,
-            'php_unit_strict' => true,
         ]
     )
-    ->setFinder(PhpCsFixer\Finder::create()->in(__DIR__));
+    ->setFinder(PhpCsFixer\Finder::create()->in(__DIR__))
+;

@@ -1,6 +1,13 @@
 {
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://git.tuxed.net/fkooman/php-tpl"
+        }
+    ],
     "require": {
-        "league/commonmark": "^0.19.1",
-        "twig/twig": "^1"
+        "fkooman/tpl": "dev-master",
+        "league/commonmark": "^0.19",
+        "league/commonmark-extras": "^0.3.0"
     }
 }
