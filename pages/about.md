@@ -2,19 +2,21 @@
 title: About
 ---
 
-eduVPN enables employees, researchers and students to easily and securely 
-connect to the Internet and gain access to their institution's protected 
-systems.
+The purpose of eduVPN is to provide a more secure access to public and private 
+networks for the international research and education community. The essential 
+eduVPN user experience should be: "open your laptop and be securely online".
 
-Many public Wi-Fi networks, for example, on the train, in the library or in 
-restaurants, are unsecure, but your home network is not always well protected 
-either. All the data you enter and receive on your phone, tablet or computer 
-can be intercepted fairly easily. Malevolent people can also divert you to a 
-phishing-website in order to intercept your password. Not a comforting thought! 
-Certainly if you are processing sensitive information.
+eduVPN service instances offered by NRENs or universities, research labs, etc., 
+allow students, researchers and staff from participating institutions to obtain 
+a VPN on their devices to known end-points.
 
-The eduVPN service resolves this by setting up a so-called Virtual Private 
-Network (VPN), an encrypted connection between your (private) computer or 
-smartphone and the company network of your organisation. It acts as a bridge, 
-offering you direct network access. This will allow you to connect securely to 
-the Internet without the fear of prying eyes close by.
+eduVPN can be deployed in two main use cases:
+
+- Secure and privacy preserving access from public networks: by providing 
+  secure gateways to trusted networks that end-users can tunnel to when using 
+  insecure networks (e.g. in particular public WiFi hotspots);
+- Institute access to private networks: a "corporate" VPN solution, where 
+  end-users can access internal resources within the internal network of their 
+  university. In this case, eduVPN has similar functionalities as a typical 
+  VPN concentrator box. The service can also be used to connect different 
+  campuses or networks (VLANs) within a single institution.
