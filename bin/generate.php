@@ -12,7 +12,7 @@ $blogOutputDir = sprintf('%s/blog', $outputDir);
 $templateDir = sprintf('%s/views', $baseDir);
 
 $blogTitle = 'eduVPN';
-$blogDescription = 'Safe and Trusted.';
+$blogDescription = 'Safe and Trusted';
 $blogAuthor = 'eduVPN';
 
 $loader = new Twig_Loader_Filesystem($templateDir);
