@@ -4,13 +4,11 @@
     <p class="date">
         <small>Published on <?php echo $this->e($post['published']); ?></small>
     </p>
-<?php if ($post['modified']) {
-    ?>
+<?php if ($post['modified']): ?>
     <p>
         <small>Last updated: <?php echo $this->e($post['modified']); ?></small>
     </p>
-<?php
-} ?>
+<?php endif; ?>
     
     <?php echo $post['htmlContent']; ?>
 

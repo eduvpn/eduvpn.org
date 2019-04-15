@@ -13,23 +13,17 @@
         <h1><?php echo $this->e($blogTitle); ?></h1>
         <h2><?php echo $this->e($blogDescription); ?></h2>
         <ul class="pages">
-<?php foreach ($pagesList as $p) {
-    ?>
-<?php if ($p['fileName'] === $activePage) {
-        ?>
+<?php foreach ($pagesList as $p): ?>
+<?php if ($p['fileName'] === $activePage): ?>
             <li class="active">
                 <a href="<?php echo $this->e($requestRoot); ?><?php echo $this->e($p['fileName']); ?>"><?php echo $this->e($p['title']); ?></a>
             </li>
-<?php
-    } else {
-        ?>
+<?php else: ?>
             <li>
                 <a href="<?php echo $this->e($requestRoot); ?><?php echo $this->e($p['fileName']); ?>"><?php echo $this->e($p['title']); ?></a>
             </li>
-<?php
-    } ?>
-<?php
-} ?>
+<?php endif; ?>
+<?php endforeach; ?>
         </ul>
     </div>
 

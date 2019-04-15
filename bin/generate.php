@@ -107,12 +107,23 @@ foreach (glob(sprintf('%s/*.md', $postDir)) as $postFile) {
         'modified' => isset($postInfo['modified']) ? $postInfo['modified'] : null,
         'fileName' => $postOutputFile,
     ];
+
     $postsList[] = $blogPost;
 }
 
 usort($postsList, function ($a, $b) {
     return strtotime($a['published']) < strtotime($b['published']);
 });
+
+$postsYearList = [];
+foreach ($postsList as $postInfo) {
+    $postDate = new DateTime($postInfo['published']);
+    $postYear = $postDate->format('Y');
+    if (!array_key_exists($postYear, $postsYearList)) {
+        $postsYearList[$postYear] = [];
+    }
+    $postsYearList[$postYear][] = $postInfo;
+}
 
 // add blog index page
 array_unshift(
@@ -121,7 +132,7 @@ array_unshift(
         'htmlContent' => $templates->render(
             'index',
             [
-                'postsList' => $postsList,
+                'postsYearList' => $postsYearList,
             ]
         ),
         'title' => 'Blog',
