@@ -25,4 +25,10 @@ and release notes.
 
 ### Linux
 
-[Documentation](https://python-eduvpn-client.readthedocs.io/en/master/)
+We have an experimental eduVPN 
+[application](https://python-eduvpn-client.readthedocs.io/en/master/) for 
+Linux.
+
+Also check out the 
+[manual](https://github.com/eduvpn/documentation/blob/master/CLIENT_COMPAT.md#linux-1)
+configuration!
