@@ -20,13 +20,8 @@ $templateDir = sprintf('%s/views', $baseDir);
 @mkdir($outputDir.'/download', 0755, true);
 @mkdir($outputDir.'/css', 0755, true);
 
-// Obtain a pre-configured Environment with all the CommonMark parsers/renderers ready-to-go
 $environment = Environment::createCommonMarkEnvironment();
-
-// Add this extension
 $environment->addExtension(new SmartPunctExtension());
-
-// Instantiate the converter engine and start converting some Markdown!
 $converter = new CommonMarkConverter([], $environment);
 
 $templates = new Template([$templateDir]);
@@ -172,19 +167,8 @@ foreach ($pagesList as $page) {
     file_put_contents($outputDir.'/'.$page['fileName'], $pagePage);
 }
 
-//file_put_contents($outputDir.'/index.html', $siteIndexPage);
-
-// copy img
-foreach (glob($baseDir.'/img/*') as $imgFile) {
-    copy($imgFile, $outputDir.'/img/'.basename($imgFile));
-}
-
-// copy download
-foreach (glob($baseDir.'/download/*') as $imgFile) {
-    copy($imgFile, $outputDir.'/download/'.basename($imgFile));
-}
-
-// copy css
-foreach (glob($baseDir.'/css/*') as $cssFile) {
-    copy($cssFile, $outputDir.'/css/'.basename($cssFile));
+foreach (['img', 'download', 'css'] as $pathName) {
+    foreach (glob($baseDir.'/'.$pathName.'/*') as $file) {
+        copy($file, $outputDir.'/'.$pathName.'/'.basename($file));
+    }
 }
