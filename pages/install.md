@@ -2,17 +2,20 @@
 title: Install
 ---
 
-We currently support installation on the following platforms. Click on the 
-link below to read the relevant instructions for the platform:
+If you are interested in setting up your own eduVPN server and being listed in
+our [apps](apps.html) make sure you are part of the (international) research
+community. This means that you should be an NREN, research organization or 
+educational institute.
 
-* [CentOS & Red Hat Enterprise Linux 7](https://github.com/eduvpn/documentation/blob/master/DEPLOY_CENTOS.md) (x86_64)
-* [Fedora 29](https://github.com/eduvpn/documentation/blob/master/DEPLOY_FEDORA.md) (x86_64)
-* [Debian](https://github.com/eduvpn/documentation/blob/master/DEPLOY_DEBIAN.md) (x86_64)
+If you are not the target audience of eduVPN, you can always use 
+[Let's Connect!](https://letsconnect-vpn.org/) which is the same software, 
+without the eduVPN _branding_.
 
-An overview of (additional) documentation can be found 
-[here](https://github.com/eduvpn/documentation/blob/master/OVERVIEW.md).
-
-If you plan to run a Let's Connect! / eduVPN server, please 
-[subscribe](https://list.surfnet.nl/mailman/listinfo/eduvpn-deploy) yourself to
-the mailing list. It will be used for announcements and discussion. An 
+Please [subscribe](https://list.surfnet.nl/mailman/listinfo/eduvpn-deploy) to 
+the mailing list if you plan to run an eduVPN server. It will be used for 
+announcements and discussion. An 
 [archive](https://list.surfnet.nl/pipermail/eduvpn-deploy/) is also available.
+
+Follow the 
+[deployment](https://github.com/eduvpn/documentation/blob/master/README.md#deployment)
+instructions to setup your server.
