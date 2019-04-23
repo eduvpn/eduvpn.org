@@ -8,6 +8,7 @@ use League\CommonMark\CommonMarkConverter;
 use League\CommonMark\Environment;
 use League\CommonMark\Ext\SmartPunct\SmartPunctExtension;
 
+$dateTime = new DateTime();
 $postDir = sprintf('%s/posts', $baseDir);
 $pageDir = sprintf('%s/pages', $baseDir);
 $outputDir = sprintf('%s/output', $baseDir);
@@ -31,6 +32,7 @@ $templates->addDefault(
         'blogDescription' => 'Safe and Trusted',
         'blogAuthor' => 'eduVPN',
         'unixTime' => time(),
+        'generatedOn' => $dateTime->format(DateTime::ATOM),
     ]
 );
 
