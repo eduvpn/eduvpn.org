@@ -26,13 +26,13 @@
 <?php endif; ?>
 <?php endforeach; ?>
         </ul>
-    </div>
+    </div> <!-- /header -->
     <div class="content">
         <?php echo $this->section('content'); ?>
     </div> <!-- /content -->
 
     <div class="footer">
-        <p>&copy; 2019 <?php echo $this->e($blogAuthor); ?></p>
+        <p>&copy; <?php echo $this->e($currentYear); ?> <?php echo $this->e($blogAuthor); ?></p>
     </div> <!-- /footer -->
 </body>
 </html>

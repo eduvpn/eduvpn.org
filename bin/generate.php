@@ -33,6 +33,7 @@ $templates->addDefault(
         'blogAuthor' => 'eduVPN',
         'unixTime' => time(),
         'generatedOn' => $dateTime->format(DateTime::ATOM),
+        'currentYear' => $dateTime->format('Y'),
     ]
 );
 
