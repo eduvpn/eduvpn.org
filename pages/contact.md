@@ -4,28 +4,23 @@ title: Contact
 
 ### Mail
 
-[eduvpn-support@lists.geant.org](mailto:eduvpn-support@lists.geant.org)
+[eduvpn-support@lists.geant.org](mailto:eduvpn-support@lists.geant.org).
 
 ### IRC
 
-Chat with us using IRC! Who says you need Slack?
+Chat with us using IRC! Who needs Slack? Mostly for technical support.
 
 * [IRC](ircs://chat.freenode.net:6697/#eduvpn) (`ircs://chat.freenode.net:6697/#eduvpn`)
 * [WebChat](https://webchat.freenode.net/?channels=#eduvpn)
 
-**NOTE**: IRC is used mostly for technical discussions!
-
 ### GitHub
 
-View source code and read the documentation.
-
-[https://github.com/eduVPN](https://github.com/eduVPN)
+View source code and read the documentation on 
+[GitHub](https://github.com/eduVPN).
 
 ### Twitter
 
-Follow us on Twitter! 
-
-[@eduvpn_nl](https://twitter.com/eduvpn_nl)
+Follow us on Twitter [@eduvpn_nl](https://twitter.com/eduvpn_nl).
 
 ### Security
 
