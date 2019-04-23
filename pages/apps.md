@@ -2,10 +2,9 @@
 title: Apps
 ---
 
-Use the applications below to connect to your eduVPN server.
-
-See [app.eduvpn.org](https://app.eduvpn.org/) for a full list of applications
-and release notes.
+Use the applications below to connect to your eduVPN server. See 
+[app.eduvpn.org](https://app.eduvpn.org/) for a full list of applications and 
+release notes.
 
 ### Windows
 
