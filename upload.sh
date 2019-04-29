@@ -1,4 +1,4 @@
 #!/bin/sh
-rm -rf output/*
+rm -rf output
 php bin/generate.php
-rsync -avzuh -e ssh output/ helium.tuxed.net:/var/www/html/fkooman/eduvpn.org --progress --exclude '.git'
+rsync -avzuh -e ssh output/ ${HOST}:/var/www/html/web/www.eduvpn.org --progress --exclude '.git'
