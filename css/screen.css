@@ -13,9 +13,16 @@ body {
     }
 
     div.header h1, div.header h2 {
-        text-align: center;
         color: #fff;
     }
+
+    ul.pages {
+        margin-top: 3em;
+    }
+}
+
+div.header h1, div.header h2 {
+    text-align: center;
 }
 
 div.content {
@@ -26,7 +33,6 @@ div.content {
 
 ul.pages {
     padding: 0;
-    margin-top: 3em;
     text-align: center;
 }
 
