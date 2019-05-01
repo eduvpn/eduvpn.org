@@ -4,16 +4,16 @@ title: Contact
 
 ### Mail
 
-[eduvpn-support@lists.geant.org](mailto:eduvpn-support@lists.geant.org).
+[eduvpn-support@lists.geant.org](mailto:eduvpn-support@lists.geant.org)
 
 ### IRC
 
-Chat with us using IRC! Who needs Slack? Mostly for technical support.
+Chat with us using IRC! Mostly for technical discussion.
 
 * [IRC](ircs://chat.freenode.net:6697/#eduvpn) (`ircs://chat.freenode.net:6697/#eduvpn`)
 * [WebChat](https://webchat.freenode.net/?channels=#eduvpn)
 
-### GitHub
+### Code
 
 View source code and read the documentation on 
 [GitHub](https://github.com/eduVPN).
@@ -21,6 +21,20 @@ View source code and read the documentation on
 ### Twitter
 
 Follow us on Twitter [@eduvpn_nl](https://twitter.com/eduvpn_nl).
+
+### Board
+
+The eduVPN board consists of:
+
+- Tan­gui Coulouarn (chair board, DeiC)
+- Jørgen Qvist (NORDUnet)
+- Klaas Wieren­ga (GÉANT)
+- Ro­gi­er Spoor (SURFnet)
+- Gui­do Aben (AARNet)
+
+![Board](img/board.jpg)
+
+[eduVPN.board@commonsconservancy.org](mailto:eduVPN.board@commonsconservancy.org)
 
 ### Security
 
