@@ -4,9 +4,7 @@ require_once dirname(__DIR__).'/vendor/autoload.php';
 $baseDir = dirname(__DIR__);
 
 use fkooman\Tpl\Template;
-use League\CommonMark\CommonMarkConverter;
-use League\CommonMark\Environment;
-use League\CommonMark\Ext\SmartPunct\SmartPunctExtension;
+use Michelf\MarkdownExtra;
 
 $dateTime = new DateTime();
 $postDir = sprintf('%s/posts', $baseDir);
@@ -20,10 +18,6 @@ $templateDir = sprintf('%s/views', $baseDir);
 @mkdir($outputDir.'/img', 0755, true);
 @mkdir($outputDir.'/download', 0755, true);
 @mkdir($outputDir.'/css', 0755, true);
-
-$environment = Environment::createCommonMarkEnvironment();
-$environment->addExtension(new SmartPunctExtension());
-$converter = new CommonMarkConverter([], $environment);
 
 $templates = new Template([$templateDir]);
 $templates->addDefault(
@@ -65,7 +59,7 @@ foreach (glob(sprintf('%s/*.md', $pageDir)) as $pageFile) {
     $pageOutputFile = basename($pageFile, '.md').'.html';
 
     $page = [
-        'htmlContent' => $converter->convertToHtml($buffer),
+        'htmlContent' => MarkdownExtra::defaultTransform($buffer),
         'title' => $pageInfo['title'],
         'fileName' => $pageOutputFile,
     ];
@@ -97,7 +91,7 @@ foreach (glob(sprintf('%s/*.md', $postDir)) as $postFile) {
     fclose($f);
     $postOutputFile = basename($postFile, '.md').'.html';
     $blogPost = [
-        'htmlContent' => $converter->convertToHtml($buffer),
+        'htmlContent' => MarkdownExtra::defaultTransform($buffer),
         'description' => isset($postInfo['description']) ? $postInfo['description'] : $postInfo['title'],
         'published' => $postInfo['published'],
         'publish' => isset($postInfo['publish']) ? 'no' !== $postInfo['publish'] : true,

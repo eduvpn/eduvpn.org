@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "49ec32d73c26f14e9c5d8641e7973a83",
+    "content-hash": "ef5adcefb3774e03e380e291aadc286f",
     "packages": [
         {
             "name": "fkooman/tpl",
@@ -48,52 +48,26 @@
             "time": "2019-04-01T16:31:15+00:00"
         },
         {
-            "name": "league/commonmark",
-            "version": "0.19.1",
+            "name": "michelf/php-markdown",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "d42b2d4a5d0a8eb2a4514f828ecb6f5db13a7c6f"
+                "url": "https://github.com/michelf/php-markdown.git",
+                "reference": "01ab082b355bf188d907b9929cd99b2923053495"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/d42b2d4a5d0a8eb2a4514f828ecb6f5db13a7c6f",
-                "reference": "d42b2d4a5d0a8eb2a4514f828ecb6f5db13a7c6f",
+                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/01ab082b355bf188d907b9929cd99b2923053495",
+                "reference": "01ab082b355bf188d907b9929cd99b2923053495",
                 "shasum": ""
             },
             "require": {
-                "ext-mbstring": "*",
-                "php": "^7.1"
+                "php": ">=5.3.0"
             },
-            "replace": {
-                "colinodell/commonmark-php": "*"
-            },
-            "require-dev": {
-                "cebe/markdown": "~1.0",
-                "commonmark/commonmark.js": "0.29.0",
-                "erusev/parsedown": "~1.0",
-                "michelf/php-markdown": "~1.4",
-                "mikehaertl/php-shellcommand": "^1.4",
-                "phpstan/phpstan-shim": "^0.11.5",
-                "phpunit/phpunit": "^7.5",
-                "scrutinizer/ocular": "^1.5",
-                "symfony/finder": "^4.2"
-            },
-            "suggest": {
-                "league/commonmark-extras": "Library of useful extensions including smart punctuation"
-            },
-            "bin": [
-                "bin/commonmark"
-            ],
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.20-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
-                    "League\\CommonMark\\": "src"
+                    "Michelf\\": "Michelf/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -102,190 +76,22 @@
             ],
             "authors": [
                 {
-                    "name": "Colin O'Dell",
-                    "email": "colinodell@gmail.com",
-                    "homepage": "https://www.colinodell.com",
-                    "role": "Lead Developer"
-                }
-            ],
-            "description": "PHP Markdown parser based on the CommonMark spec",
-            "homepage": "https://commonmark.thephpleague.com",
-            "keywords": [
-                "commonmark",
-                "markdown",
-                "parser"
-            ],
-            "time": "2019-04-11T04:37:01+00:00"
-        },
-        {
-            "name": "league/commonmark-ext-autolink",
-            "version": "v0.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/commonmark-ext-autolink.git",
-                "reference": "a49a2d116b6211dab7e019d1c563526eefe31da6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark-ext-autolink/zipball/a49a2d116b6211dab7e019d1c563526eefe31da6",
-                "reference": "a49a2d116b6211dab7e019d1c563526eefe31da6",
-                "shasum": ""
-            },
-            "require": {
-                "league/commonmark": "^0.19",
-                "php": "^7.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^7.5"
-            },
-            "type": "commonmark-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "League\\CommonMark\\Ext\\Autolink\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
+                    "name": "Michel Fortin",
+                    "email": "michel.fortin@michelf.ca",
+                    "homepage": "https://michelf.ca/",
+                    "role": "Developer"
+                },
                 {
-                    "name": "Colin O'Dell",
-                    "email": "colinodell@gmail.com",
-                    "homepage": "https://www.colinodell.com",
-                    "role": "Lead Developer"
+                    "name": "John Gruber",
+                    "homepage": "https://daringfireball.net/"
                 }
             ],
-            "description": "Extension for league/commonmark which autolinks URLs, emails, and @-mentions",
-            "homepage": "https://github.com/thephpleague/commonmark-ext-autolink",
+            "description": "PHP Markdown",
+            "homepage": "https://michelf.ca/projects/php-markdown/",
             "keywords": [
-                "autolink",
-                "commonmark",
-                "extension",
-                "gfm",
-                "github",
-                "markdown",
-                "twitter"
-            ],
-            "time": "2019-04-11T02:46:12+00:00"
-        },
-        {
-            "name": "league/commonmark-ext-smartpunct",
-            "version": "v0.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/commonmark-ext-smartpunct.git",
-                "reference": "92806c302f39e9bb1b8fcdfb6fa7cb36de856744"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark-ext-smartpunct/zipball/92806c302f39e9bb1b8fcdfb6fa7cb36de856744",
-                "reference": "92806c302f39e9bb1b8fcdfb6fa7cb36de856744",
-                "shasum": ""
-            },
-            "require": {
-                "league/commonmark": "^0.19",
-                "php": "^7.1"
-            },
-            "require-dev": {
-                "jgm/smartpunct": "0.29",
-                "phpunit/phpunit": "^7.5"
-            },
-            "type": "commonmark-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.3-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "League\\CommonMark\\Ext\\SmartPunct\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Colin O'Dell",
-                    "email": "colinodell@gmail.com",
-                    "homepage": "https://www.colinodell.com",
-                    "role": "Lead Developer"
-                }
-            ],
-            "description": "Intelligently converts ASCII quotes, dashes, and ellipses in Markdown to their Unicode equivalents",
-            "homepage": "https://github.com/thephpleague/commonmark-ext-smartpunct",
-            "keywords": [
-                "commonmark",
-                "extension",
-                "markdown",
-                "punctuation",
-                "smartpunct"
-            ],
-            "time": "2019-04-11T02:51:38+00:00"
-        },
-        {
-            "name": "league/commonmark-extras",
-            "version": "0.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/commonmark-extras.git",
-                "reference": "9af6b88593af6f26f36be5d9682a9fc4d03c4b68"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark-extras/zipball/9af6b88593af6f26f36be5d9682a9fc4d03c4b68",
-                "reference": "9af6b88593af6f26f36be5d9682a9fc4d03c4b68",
-                "shasum": ""
-            },
-            "require": {
-                "league/commonmark": "^0.19.1",
-                "league/commonmark-ext-autolink": "^0.3",
-                "league/commonmark-ext-smartpunct": "^0.2",
-                "php": "^7.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^7.5"
-            },
-            "type": "commonmark-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "League\\CommonMark\\Extras\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Colin O'Dell",
-                    "email": "colinodell@gmail.com",
-                    "homepage": "https://www.colinodell.com",
-                    "role": "Lead Developer"
-                }
-            ],
-            "description": "Useful extensions for customizing the league/commonmark Markdown parser",
-            "homepage": "https://github.com/thephpleague/commonmark-extras",
-            "keywords": [
-                "Extras",
-                "commonmark",
-                "extensions",
-                "gfm",
                 "markdown"
             ],
-            "time": "2019-04-11T04:39:21+00:00"
+            "time": "2018-01-15T00:49:33+00:00"
         }
     ],
     "packages-dev": [],

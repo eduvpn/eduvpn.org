@@ -7,7 +7,6 @@
     ],
     "require": {
         "fkooman/tpl": "dev-master",
-        "league/commonmark": "^0.19",
-        "league/commonmark-extras": "^0.3.0"
+        "michelf/php-markdown": "^1.8"
     }
 }
