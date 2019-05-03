@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width; height=device-height; initial-scale=1">
     <title><?php echo $this->e($blogTitle); ?> - <?php echo $this->e($pageTitle); ?></title>
     <link rel="stylesheet" type="text/css" href="<?php echo $this->e($requestRoot); ?>css/bootstrap-reboot.css">    
-    <link rel="stylesheet" type="text/css" href="<?php echo $this->e($requestRoot); ?>css/screen.css?timestamp=<?php echo $unixTime; ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo $this->e($requestRoot); ?>css/screen.css">
 </head>
 <body>
     <div class="header">

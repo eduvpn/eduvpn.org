@@ -25,7 +25,6 @@ $templates->addDefault(
         'blogTitle' => 'eduVPN',
         'blogDescription' => 'Safe and Trusted',
         'blogAuthor' => 'eduVPN',
-        'unixTime' => time(),
         'generatedOn' => $dateTime->format(DateTime::ATOM),
         'currentYear' => $dateTime->format('Y'),
     ]
@@ -137,7 +136,6 @@ foreach ($postsList as $post) {
         $postPage = $templates->render(
             'post',
             [
-                'unixTime' => time(),
                 'requestRoot' => '../',
                 'pagesList' => $pagesList,
                 'activePage' => 'index.html',
@@ -153,7 +151,6 @@ foreach ($pagesList as $page) {
     $pagePage = $templates->render(
         'page',
         [
-            'unixTime' => time(),
             'requestRoot' => '',
             'activePage' => $page['fileName'],
             'pagesList' => $pagesList,
