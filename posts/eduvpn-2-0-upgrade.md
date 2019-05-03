@@ -15,7 +15,7 @@ especially when using the "Guest" option where you connect to the VPN endpoint
 of another country from your home institution.
 
 All client configurations will break, as well as the "authorizations" obtained
-by the eduVPN [applications](apps.html). For users of the eduVPN applications, 
+by the eduVPN [applications](../apps.html). For users of the eduVPN applications, 
 it will be a simple matter of "reauthenticating" after the server upgrade is 
 complete. For users that manually downloaded the VPN configuration, e.g. on 
 platforms not supported by an official eduVPN application, the connection will
