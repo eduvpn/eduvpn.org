@@ -1,14 +1,19 @@
 <?php $this->layout('base'); ?>
 <?php $this->start('content'); ?>
     <h2><?php echo $this->e($pageTitle); ?></h2>
+    <p>
+        <small><?php echo $this->e($post['published']); ?></small>
+    </p>
+
     <?php echo $post['htmlContent']; ?>
 
+<?php if ($post['modified']): ?>
     <p class="center">
         <small>
-            Published on <?php echo $this->e($post['published']); ?>
-<?php if ($post['modified']): ?>
-            (Updated on <?php echo $this->e($post['modified']); ?>)
-<?php endif; ?>
+            Updated on <?php echo $this->e($post['modified']); ?>
         </small>
     </p>
+<?php endif; ?>
+    <p class="center">    <small><a href="index.html">Blog Index</a></small>
+</p>
 <?php $this->stop(); ?>
