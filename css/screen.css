@@ -119,3 +119,15 @@ small {
     color: gray;
     font-size: 80%;
 }
+
+p.latest {
+    border: 1px solid #df7f0c;
+    padding: 1em;
+    text-align: center;
+    color: #df7f0c;
+}
+
+p.latest a {
+    color: #df7f0c;
+    font-weight: bold;
+}

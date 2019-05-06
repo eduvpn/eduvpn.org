@@ -2,7 +2,7 @@
 title: Documentation
 ---
 
-For now all documenation can be found in our GitHub 
+For now all documentation can be found in our GitHub 
 [repository](https://github.com/eduvpn/documentation). If you want to install 
 your own eduVPN server, go 
 [here](https://github.com/eduvpn/documentation/blob/master/README.md#deployment). 

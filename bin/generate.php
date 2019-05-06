@@ -33,38 +33,6 @@ $templates->addDefault(
 $postsList = [];
 $pagesList = [];
 
-foreach (glob(sprintf('%s/*.md', $pageDir)) as $pageFile) {
-    $pageInfo = [];
-
-    $f = fopen($pageFile, 'r');
-    $line = fgets($f);
-    if (0 !== strpos($line, '---')) {
-        throw new Exception(sprintf('invalid file "%s"!', $pageFile));
-    }
-    $line = fgets($f);
-    do {
-        $xx = explode(':', $line, 2);
-        $pageInfo[trim($xx[0])] = trim($xx[1]);
-        $line = fgets($f);
-    } while (0 !== strpos($line, '---'));
-
-    // read rest of the page
-    $buffer = '';
-    while (!feof($f)) {
-        $buffer .= fgets($f);
-    }
-
-    fclose($f);
-    $pageOutputFile = basename($pageFile, '.md').'.html';
-
-    $page = [
-        'htmlContent' => MarkdownExtra::defaultTransform($buffer),
-        'title' => $pageInfo['title'],
-        'fileName' => $pageOutputFile,
-    ];
-    $pagesList[] = $page;
-}
-
 foreach (glob(sprintf('%s/*.md', $postDir)) as $postFile) {
     $postInfo = [];
 
@@ -116,20 +84,63 @@ foreach ($postsList as $postInfo) {
     $postsYearList[$postYear][] = $postInfo;
 }
 
-// add blog index page
-array_unshift(
-    $pagesList,
-    [
-        'htmlContent' => $templates->render(
-            'index',
-            [
-                'postsYearList' => $postsYearList,
-            ]
-        ),
-        'title' => 'Blog',
-        'fileName' => 'index.html',
-    ]
-);
+foreach (glob(sprintf('%s/*.md', $pageDir)) as $pageFile) {
+    $pageInfo = [];
+
+    $f = fopen($pageFile, 'r');
+    $line = fgets($f);
+    if (0 !== strpos($line, '---')) {
+        throw new Exception(sprintf('invalid file "%s"!', $pageFile));
+    }
+    $line = fgets($f);
+    do {
+        $xx = explode(':', $line, 2);
+        $pageInfo[trim($xx[0])] = trim($xx[1]);
+        $line = fgets($f);
+    } while (0 !== strpos($line, '---'));
+
+    // read rest of the page
+    $buffer = '';
+    while (!feof($f)) {
+        $buffer .= fgets($f);
+    }
+
+    fclose($f);
+    $pageOutputFile = basename($pageFile, '.md').'.html';
+
+    $page = [
+        'htmlContent' => MarkdownExtra::defaultTransform($buffer),
+        'title' => $pageInfo['title'],
+        'fileName' => $pageOutputFile,
+        'priority' => isset($pageInfo['priority']) ? (int) $pageInfo['priority'] : 255,
+        'latestBlog' => isset($pageInfo['latest_blog']) ? $postsList[0] : false,
+    ];
+    $pagesList[] = $page;
+}
+
+// add blog page
+$pagesList[] = [
+    'htmlContent' => $templates->render(
+        'index',
+        [
+            'postsYearList' => $postsYearList,
+        ]
+    ),
+    'title' => 'Blog',
+    'requestRoot' => '../',
+    'fileName' => 'blog/index.html',
+    'priority' => 255,
+    'latestBlog' => false,
+];
+
+// sort pages by priority
+usort($pagesList, function ($a, $b) {
+    if ($a['priority'] === $b['priority']) {
+        return 0;
+    }
+
+    return ($a['priority'] < $b['priority']) ? -1 : 1;
+});
 
 foreach ($postsList as $post) {
     if ($post['publish']) {
@@ -138,7 +149,7 @@ foreach ($postsList as $post) {
             [
                 'requestRoot' => '../',
                 'pagesList' => $pagesList,
-                'activePage' => 'index.html',
+                'activePage' => 'blog/index.html',
                 'pageTitle' => $post['title'],
                 'post' => $post,
             ]
@@ -151,11 +162,12 @@ foreach ($pagesList as $page) {
     $pagePage = $templates->render(
         'page',
         [
-            'requestRoot' => '',
+            'requestRoot' => isset($page['requestRoot']) ? $page['requestRoot'] : '',
             'activePage' => $page['fileName'],
             'pagesList' => $pagesList,
             'pageTitle' => $page['title'],
             'pageContent' => $page,
+            'latestBlog' => $page['latestBlog'],
         ]
     );
     file_put_contents($outputDir.'/'.$page['fileName'], $pagePage);
