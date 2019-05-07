@@ -84,6 +84,10 @@ blockquote, pre {
     padding: 1em;
 }
 
+blockquote p {
+    margin: 0;
+}
+
 code {
     background-color: #f0f0f0;
     padding: 0.1em;
