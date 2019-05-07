@@ -3,8 +3,8 @@
 require_once dirname(__DIR__).'/vendor/autoload.php';
 $baseDir = dirname(__DIR__);
 
+use eduVPN\Web\Markdown;
 use fkooman\Tpl\Template;
-use Michelf\MarkdownExtra;
 
 $dateTime = new DateTime();
 $postDir = sprintf('%s/posts', $baseDir);
@@ -18,6 +18,8 @@ $templateDir = sprintf('%s/views', $baseDir);
 @mkdir($outputDir.'/img', 0755, true);
 @mkdir($outputDir.'/download', 0755, true);
 @mkdir($outputDir.'/css', 0755, true);
+
+$md = new Markdown();
 
 $templates = new Template([$templateDir]);
 $templates->addDefault(
@@ -58,7 +60,7 @@ foreach (glob(sprintf('%s/*.md', $postDir)) as $postFile) {
     fclose($f);
     $postOutputFile = basename($postFile, '.md').'.html';
     $blogPost = [
-        'htmlContent' => MarkdownExtra::defaultTransform($buffer),
+        'htmlContent' => $md->transform($buffer),
         'description' => isset($postInfo['description']) ? $postInfo['description'] : $postInfo['title'],
         'published' => $postInfo['published'],
         'publish' => isset($postInfo['publish']) ? 'no' !== $postInfo['publish'] : true,
@@ -107,9 +109,8 @@ foreach (glob(sprintf('%s/*.md', $pageDir)) as $pageFile) {
 
     fclose($f);
     $pageOutputFile = basename($pageFile, '.md').'.html';
-
     $page = [
-        'htmlContent' => MarkdownExtra::defaultTransform($buffer),
+        'htmlContent' => $md->transform($buffer),
         'title' => $pageInfo['title'],
         'fileName' => $pageOutputFile,
         'priority' => isset($pageInfo['priority']) ? (int) $pageInfo['priority'] : 255,

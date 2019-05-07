@@ -1,24 +1,11 @@
-body {
-    margin: 0 auto;
-    background-color: #eeeeee;
-    max-width: 900px;
+div.header {
+    background-color: #df7f0c;
+    padding: 1em;
 }
 
-@media (min-width: 900px) {
-    div.header {
-        padding-top: 1em;
-        background: url(../img/header.jpg) no-repeat;
-        width: 900px;
-        height: 225px;
-    }
-
-    div.header h1, div.header h2 {
-        color: #fff;
-    }
-
-    ul.pages {
-        margin-top: 3em;
-    }
+ul.pages li.active a {
+    background-color: #444;
+    color: #fff;
 }
 
 div.header h1, div.header h2 {
@@ -26,6 +13,8 @@ div.header h1, div.header h2 {
 }
 
 div.content {
+    margin: 0 auto;
+    max-width: 800px;
     text-align: justify;
     padding: 1em 1.5em;
     background-color: #fff;
@@ -33,18 +22,15 @@ div.content {
 
 ul.pages {
     padding: 0;
+    margin-top: 2em;
     text-align: center;
 }
 
 ul.pages li {
     list-style: none;
     display: inline-block;
-    padding: 1em;
-}
-
-ul.pages li.active a {
-    background-color: #df7f0c;
-    color: #fff;
+    padding: 1em 0.5em;
+    margin: 0.5em 0;
 }
 
 ul.pages li a {
@@ -130,4 +116,28 @@ p.latest {
 p.latest a {
     color: #df7f0c;
     font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    div.header {
+        background: url(../img/header-small.jpg) no-repeat;
+        background-size: auto 225px;
+        height: 225px;
+    }
+
+    div.header h1, div.header h2 {
+        text-shadow: black 0 1px;
+        color: #fff;
+    }
+
+    ul.pages li.active a {
+        background-color: #df7f0c;
+        color: #fff;
+    }
+}
+
+@media (min-width: 2048px) {
+    div.header {
+        background: url(../img/header-big.jpg) no-repeat;
+    }    
 }

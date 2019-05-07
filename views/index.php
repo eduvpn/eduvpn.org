@@ -1,5 +1,5 @@
 <?php foreach ($postsYearList as $year => $postsList): ?>
-<h3><?=$this->e($year); ?></h3>
+<h3><?php echo $this->e($year); ?></h3>
     <ul class="index">
 <?php foreach ($postsList as $post): ?>
 <?php if ($post['publish']): ?>

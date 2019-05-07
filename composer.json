@@ -1,4 +1,12 @@
 {
+    "autoload": {
+        "psr-4": {
+            "eduVPN\\Web\\": "src/"
+        }
+    },
+    "description": "eduvpn.org",
+    "license": "proprietary",
+    "name": "eduvpn/eduvpn.org",
     "repositories": [
         {
             "type": "vcs",
@@ -8,5 +16,6 @@
     "require": {
         "fkooman/tpl": "dev-master",
         "michelf/php-markdown": "^1.8"
-    }
+    },
+    "type": "project"
 }

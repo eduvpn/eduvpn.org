@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ef5adcefb3774e03e380e291aadc286f",
+    "content-hash": "773a49f1d8baf11c18bf10688d56ab6e",
     "packages": [
         {
             "name": "fkooman/tpl",
