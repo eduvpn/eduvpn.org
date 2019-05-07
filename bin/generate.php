@@ -114,6 +114,7 @@ foreach (glob(sprintf('%s/*.md', $pageDir)) as $pageFile) {
         'fileName' => $pageOutputFile,
         'priority' => isset($pageInfo['priority']) ? (int) $pageInfo['priority'] : 255,
         'latestBlog' => isset($pageInfo['latest_blog']) ? $postsList[0] : false,
+        'hidePage' => isset($pageInfo['hide-page']) ? 'yes' === $pageInfo['hide-page'] : false,
     ];
     $pagesList[] = $page;
 }
@@ -126,6 +127,7 @@ $pagesList[] = [
             'postsYearList' => $postsYearList,
         ]
     ),
+    'hidePage' => false,
     'title' => 'Blog',
     'requestRoot' => '../',
     'fileName' => 'blog/index.html',

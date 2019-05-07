@@ -15,16 +15,18 @@
         <h2><?php echo $this->e($blogDescription); ?></h2>
         <ul class="pages">
 <?php foreach ($pagesList as $p): ?>
+<?php if (!$p['hidePage']): ?>
 <?php if ($p['fileName'] === $activePage): ?>
-            <li class="active">
-                <a href="<?php echo $this->e($requestRoot); ?><?php echo $this->e($p['fileName']); ?>"><?php echo $this->e($p['title']); ?></a>
-            </li>
+                <li class="active">
+                    <a href="<?php echo $this->e($requestRoot); ?><?php echo $this->e($p['fileName']); ?>"><?php echo $this->e($p['title']); ?></a>
+                </li>
 <?php else: ?>
-            <li>
-                <a href="<?php echo $this->e($requestRoot); ?><?php echo $this->e($p['fileName']); ?>"><?php echo $this->e($p['title']); ?></a>
-            </li>
+                <li>
+                    <a href="<?php echo $this->e($requestRoot); ?><?php echo $this->e($p['fileName']); ?>"><?php echo $this->e($p['title']); ?></a>
+                </li>
 <?php endif; ?>
-<?php endforeach; ?>
+<?php endif; ?>
+    <?php endforeach; ?>
         </ul>
     </div> <!-- /header -->
     <div class="content">
