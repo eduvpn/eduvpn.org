@@ -9,7 +9,7 @@ module.
 
 1. The Debian 
    [package](https://packages.debian.org/stretch-backports/libapache2-mod-auth-mellon) 
-   generates invalid signatures over `AuthRequest` messages which wasted a lot
+   generates invalid signatures over `AuthnRequest` messages which wasted a lot
    of time debugging (issue reported to the Debian package maintainer)...
 2. Mellon does NOT properly support `eduPersonTargetedID` (serialization)
 3. Mellon does NOT check the "scope" of attributes against the IdP metadata 
