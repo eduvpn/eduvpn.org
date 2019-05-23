@@ -1,6 +1,7 @@
 ---
 title: Mellon (SAML) Support Status
 published: 2019-05-22
+modified: 2019-05-23
 ---
 
 Recently, during the upgrades to eduVPN 2.0, we've been having some trouble 
@@ -24,14 +25,15 @@ For _mesh_ federations this does not really suffice. One has to be able to rely
 on the attribute values without needing to implement e.g. scope validation or 
 `eduPersonTargetedID` validation/serialization in the application code. 
 
-If at all possible install and use 
+If possible install and use 
 [Shibboleth](https://www.shibboleth.net/products/service-provider/). This is
-supported by eduVPN 2.0. Setting up Shibboleth is quite complicated, this is 
-out of scope of the eduVPN project. We did make documentation available 
+supported by eduVPN 2.0. Setting up Shibboleth can be complicated, the 
+exact details are out of scope of the eduVPN project. We did make documentation 
+available 
 [here](https://github.com/eduvpn/documentation/blob/v2/SHIBBOLETH_SP.md) on 
-how to configure eduVPN after setting up Shibboleth. You should contact your 
-identity federation for more information and instructions on how to exactly
-configure Shibboleth.
+how to configure Shibboleth and eduVPN. You can contact your identity 
+federation for federation specific instructions if these instructions do not 
+suffice.
 
 We are currently working on native SAML support for eduVPN 3.0. We will see if 
 this covers all the cases we require and which are currently supported by 
