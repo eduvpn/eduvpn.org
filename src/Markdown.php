@@ -67,10 +67,6 @@ class Markdown
             return $inputUri;
         }
 
-        if (0 === strpos($inputUri, 'img/')) {
-            return '../'.$inputUri;
-        }
-
         echo 'Probably a "dead" link: '.$inputUri.PHP_EOL;
 
         return $inputUri;
