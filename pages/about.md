@@ -2,29 +2,19 @@
 title: About
 ---
 
-The purpose of eduVPN is to provide easier and more secure access to public and 
-private networks for the international research and education community. The 
-essential eduVPN user experience should be: "open your laptop and be securely 
-online".
+In 2015, eduVPN started as a project at the Dutch research and education 
+network [SURFnet](https://surfnet.nl/). SURFnet continues to play a leading 
+role in the project, but now eduVPN is deployed in a number of countries 
+including Denmark, Germany, Norway, Ukraine, Uganda and Australia.
 
-eduVPN service instances offered by NRENs or universities, research labs, etc., 
-allow students, researchers and staff from participating institutions to obtain 
-a VPN connection on their devices to known end-points.
+eduVPN is currently a program under the 
+[Commons Conservancy](https://commonsconservancy.org/), a non-for-profit 
+foundation focusing on free and open source projects. It is also part of the 
+[GÉANT](https://www.geant.org/) project (GN4-3) which is co-funded by the 
+European Union.
 
-### Secure Internet
+It has received funding from the 
+[Vietsch Foundation](http://www.vietsch-foundation.org/), 
+[RIPE](https://www.ripe.net/) and the [NLnet Foundation](https://nlnet.nl/).
 
-_Secure Internet_ provides secure and privacy preserving access from public 
-networks: by providing secure gateways to trusted networks that end-users can 
-tunnel to when using insecure networks, in particular public WiFi hot spots.
-
-![Secure Internet](img/secure_internet.png)
-
-### Institute Access
-
-_Institute Access_ provides access to private networks: a "corporate" VPN 
-solution as it were, where end-users can access internal resources within the 
-internal network of their university. In this case, eduVPN has similar 
-functionalities as a typical VPN concentrator box. The service can also be used 
-to connect different campuses or networks (VLANs) within a single institution.
-
-![Institute Access](img/institute_access.png)
+![Participants](img/about_logos.png)
