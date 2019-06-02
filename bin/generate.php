@@ -9,12 +9,15 @@ use fkooman\Tpl\Template;
 $dateTime = new DateTime();
 $postDir = sprintf('%s/posts', $baseDir);
 $pageDir = sprintf('%s/pages', $baseDir);
+$docsDir = sprintf('%s/docs', $baseDir);
 $outputDir = sprintf('%s/output', $baseDir);
 $blogOutputDir = sprintf('%s/blog', $outputDir);
+$docOutputDir = sprintf('%s/docs', $outputDir);
 $templateDir = sprintf('%s/views', $baseDir);
 
 @mkdir($outputDir, 0755, true);
 @mkdir($blogOutputDir, 0755, true);
+@mkdir($docOutputDir, 0755, true);
 @mkdir($outputDir.'/img', 0755, true);
 @mkdir($outputDir.'/download', 0755, true);
 @mkdir($outputDir.'/css', 0755, true);
@@ -34,6 +37,7 @@ $templates->addDefault(
 
 $postsList = [];
 $pagesList = [];
+$docsList = [];
 
 foreach (glob(sprintf('%s/*.md', $postDir)) as $postFile) {
     $postInfo = [];
@@ -86,6 +90,48 @@ foreach ($postsList as $postInfo) {
     $postsYearList[$postYear][] = $postInfo;
 }
 
+foreach (glob(sprintf('%s/*', $docsDir)) as $docVer) {
+    $docVer = basename($docVer);
+    $docsList[$docVer] = [];
+    foreach (glob(sprintf('%s/%s/*.md', $docsDir, $docVer)) as $docFile) {
+        $docInfo = [];
+
+        // obtain docInfo
+        $f = fopen($docFile, 'r');
+        $line = fgets($f);
+        if (0 !== strpos($line, '---')) {
+            throw new Exception(sprintf('invalid file! "%s"', $docFile));
+        }
+        $line = fgets($f);
+        do {
+            $xx = explode(':', $line, 2);
+            $docInfo[trim($xx[0])] = trim($xx[1]);
+            $line = fgets($f);
+        } while (0 !== strpos($line, '---'));
+
+        // read rest of the doc
+        $buffer = '';
+        while (!feof($f)) {
+            $buffer .= fgets($f);
+        }
+
+        fclose($f);
+        $docOutputFile = basename($docFile, '.md').'.html';
+        $docPage = [
+            'htmlContent' => $md->transform($buffer),
+            'description' => isset($docInfo['description']) ? $docInfo['description'] : $docInfo['title'],
+            'title' => $docInfo['title'],
+            'modified' => isset($docInfo['modified']) ? $docInfo['modified'] : null,
+            'fileName' => $docOutputFile,
+        ];
+
+        $docsList[$docVer][] = $docPage;
+    }
+}
+
+//var_dump($docsList);
+//die();
+
 foreach (glob(sprintf('%s/*.md', $pageDir)) as $pageFile) {
     $pageInfo = [];
 
@@ -136,6 +182,22 @@ $pagesList[] = [
     'latestBlog' => false,
 ];
 
+// add docs page
+$pagesList[] = [
+    'htmlContent' => $templates->render(
+        'docs_index',
+        [
+            'doc_version_list' => array_keys($docsList),
+        ]
+    ),
+    'hidePage' => false,
+    'title' => 'Documentation',
+    'requestRoot' => '../',
+    'fileName' => 'docs/index.html',
+    'priority' => 255,
+    'latestBlog' => false,
+];
+
 // sort pages by priority
 usort($pagesList, function ($a, $b) {
     if ($a['priority'] === $b['priority']) {
@@ -158,6 +220,23 @@ foreach ($postsList as $post) {
             ]
         );
         file_put_contents($blogOutputDir.'/'.$post['fileName'], $postPage);
+    }
+}
+
+foreach ($docsList as $docVer => $docList) {
+    @mkdir($docOutputDir.'/'.$docVer, 0755, true);
+    foreach ($docList as $doc) {
+        $docPage = $templates->render(
+            'doc',
+            [
+                'requestRoot' => '../../',
+                'pagesList' => $pagesList,
+                'activePage' => 'docs/index.html',
+                'pageTitle' => $doc['title'],
+                'doc' => $doc,
+            ]
+        );
+        file_put_contents($docOutputDir.'/'.$docVer.'/'.$doc['fileName'], $docPage);
     }
 }
 
