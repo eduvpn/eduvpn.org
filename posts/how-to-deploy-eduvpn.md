@@ -1,7 +1,11 @@
 ---
 title: How to deploy eduVPN
 published: 2018-06-13
+modified: 2019-06-17
 ---
+
+**UPDATE**: see [Documentation](../documentation.html) for up to date 
+information on how to install eduVPN.
 
 Currently the NRENs from Uganda, Denmark, Norway and the Netherlands have 
 deployed an eduVPN server. At TNC18 we got questions about how to deploy 
