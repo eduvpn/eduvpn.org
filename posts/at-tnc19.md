@@ -1,6 +1,7 @@
 ---
 title: eduVPN at TNC19
 published: 2019-06-07
+modified: 2019-06-17
 ---
 
 eduVPN will be present at [TNC19](https://tnc19.geant.org) in Tallinn on 17 and 
@@ -13,7 +14,10 @@ your requirements.
 
 The workshop will also be place where the draft policy for guest access in 
 eduVPN will become the official 
-[policy](https://www.eduvpn.org/download/eduVPN_Compliance_Statement_19122018.pdf).
+[policy](../download/eduVPN_Compliance_Statement_19122018.pdf).
+
+**UPDATE**: find the 1.0 compliance statement, as discussed during TNC19, 
+[here](../download/eduVPN_Compliance_Statement_1.0.pdf)!
 
 Guest access describes the situation when users from an NREN use another NREN’s 
 instance to access the Internet. This is the use case that has raised most 

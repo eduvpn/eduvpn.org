@@ -1,5 +1,5 @@
 ---
-title: First Policy Draft
+title: eduVPN Beta Apps
 published: 2017-11-29
 ---
 
