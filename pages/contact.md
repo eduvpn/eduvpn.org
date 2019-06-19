@@ -20,7 +20,7 @@ View source code and read the documentation on
 
 ### Twitter
 
-Follow us on Twitter [@eduvpn_nl](https://twitter.com/eduvpn_nl).
+Follow us on Twitter [@eduvpn_org](https://twitter.com/eduvpn_org).
 
 ### Board
 
