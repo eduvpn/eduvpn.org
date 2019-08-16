@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <!-- Generated on <?php echo $this->e($generatedOn); ?> -->
-    <meta name="viewport" content="width=device-width; height=device-height; initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo $this->e($blogTitle); ?> - <?php echo $this->e($pageTitle); ?></title>
     <link rel="stylesheet" type="text/css" href="<?php echo $this->e($requestRoot); ?>css/bootstrap-reboot.css">    
     <link rel="stylesheet" type="text/css" href="<?php echo $this->e($requestRoot); ?>css/screen.css">
