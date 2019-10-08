@@ -4,8 +4,9 @@ title: About
 
 In 2015, eduVPN started as a project at the Dutch research and education 
 network [SURFnet](https://surfnet.nl/). SURFnet continues to play a leading 
-role in the project, but now eduVPN is deployed in a number of countries 
-including Denmark, Germany, Norway, Ukraine, Uganda and Australia.
+role in the project, but now eduVPN is deployed in a number of countries: 
+Australia, Denmark, Finland, France, Germany, The Netherlands, Norway, 
+Pakistan, Uganda and Ukraine! 
 
 eduVPN is currently a program under the 
 [Commons Conservancy](https://commonsconservancy.org/), a non-for-profit 
