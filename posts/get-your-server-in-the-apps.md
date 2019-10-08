@@ -1,5 +1,5 @@
 ---
-title: Get your VPN Server Listed in the Apps
+title: Get your VPN Server in the Apps
 published: 2019-10-08
 ---
 
