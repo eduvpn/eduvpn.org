@@ -1,6 +1,7 @@
 ---
 title: Get your VPN Server in the Apps
 published: 2019-10-08
+modified: 2019-10-09
 ---
 
 To make eduVPN easier to use, and allow users to select the VPN server they 
@@ -74,6 +75,8 @@ guest access by other participating NRENs can be listed in the applications.
 
 The following information needs to be provided in order to be added:
 
+* A *generic* contact email address to be contacted for general inquiries, to 
+  be listed on the [Contact](../contact.html#server-operators) page;
 * An *abuse* contact email address to be contacted in case of abuse (preferably 
   a role-based mail address);
 * A *technical* contact email address to be contacted in case of technical 
