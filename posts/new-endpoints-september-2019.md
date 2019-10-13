@@ -8,7 +8,7 @@ As of September 2019, two additional countries are available to the users of
 the eduVPN [applications](../apps.html): Finland, operated by FUNET, and 
 France, operated by RENATER. In addition, in October, Sri Lanka was added!
 
-eduVPN servers are now available in 10 countries. This means that research and
+eduVPN servers are now available in 11 countries. This means that research and
 education users from those countries can access Internet through those 
 endpoints once authenticated to their own country's eduVPN server.
 
