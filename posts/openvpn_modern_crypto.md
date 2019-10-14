@@ -1,6 +1,7 @@
 ---
 title: OpenVPN and Modern Crypto
 published: 2019-10-11
+modified: 2019-10-14
 ---
 
 We decided to investigate what it would take to modernize the cryptography used 
@@ -67,7 +68,8 @@ longer.
 upstream
 
 **(2)** We sent a mail on 2019-10-11 to `support@sparklabs.com` to ask for 
-updating OpenSSL as used by Viscosity
+updating OpenSSL as used by Viscosity. Their response: "...we’ll likely be 
+adopting 1.1.1 with an upcoming OpenVPN 2.4.x release..."
 
 **(3)** In Tunnelblick, the "OpenVPN version" needs to be changed to 
 `2.4.7 - OpenSSL v1.1.1d` under "Configurations". We tested with 
