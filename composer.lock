@@ -12,7 +12,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.tuxed.net/fkooman/php-tpl",
-                "reference": "3183ad815e30baa8bc660c11af2c04d72ef57935"
+                "reference": "f1b54e1577fde06bccac767aa4e884ee73258a1a"
             },
             "require": {
                 "php": ">=5.4"
@@ -23,12 +23,12 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "fkooman\\Tpl\\": "src/"
+                    "fkooman\\Template\\": "src/"
                 }
             },
             "autoload-dev": {
                 "psr-4": {
-                    "fkooman\\Tpl\\Tests\\": "tests/"
+                    "fkooman\\Template\\Tests\\": "tests/"
                 }
             },
             "license": [
@@ -45,7 +45,7 @@
                 "email": "fkooman@tuxed.net",
                 "source": "https://git.tuxed.net/fkooman/php-tpl"
             },
-            "time": "2019-04-01T16:31:15+00:00"
+            "time": "2019-09-02T09:33:49+00:00"
         },
         {
             "name": "michelf/php-markdown",

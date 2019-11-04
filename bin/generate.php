@@ -4,7 +4,7 @@ require_once dirname(__DIR__).'/vendor/autoload.php';
 $baseDir = dirname(__DIR__);
 
 use eduVPN\Web\Markdown;
-use fkooman\Tpl\Template;
+use fkooman\Template\Tpl;
 
 $dateTime = new DateTime();
 $postDir = sprintf('%s/posts', $baseDir);
@@ -21,8 +21,8 @@ $templateDir = sprintf('%s/views', $baseDir);
 
 $md = new Markdown();
 
-$templates = new Template([$templateDir]);
-$templates->addDefault(
+$tpl = new Tpl([$templateDir]);
+$tpl->addDefault(
     [
         'blogTitle' => 'eduVPN',
         'blogDescription' => 'Safe and Trusted',
@@ -122,7 +122,7 @@ foreach (glob(sprintf('%s/*.md', $pageDir)) as $pageFile) {
 
 // add blog page
 $pagesList[] = [
-    'htmlContent' => $templates->render(
+    'htmlContent' => $tpl->render(
         'index',
         [
             'postsYearList' => $postsYearList,
@@ -147,7 +147,7 @@ usort($pagesList, function ($a, $b) {
 
 foreach ($postsList as $post) {
     if ($post['publish']) {
-        $postPage = $templates->render(
+        $postPage = $tpl->render(
             'post',
             [
                 'requestRoot' => '../',
@@ -163,7 +163,7 @@ foreach ($postsList as $post) {
 }
 
 foreach ($pagesList as $page) {
-    $pagePage = $templates->render(
+    $pagePage = $tpl->render(
         'page',
         [
             'requestRoot' => isset($page['requestRoot']) ? $page['requestRoot'] : '',
