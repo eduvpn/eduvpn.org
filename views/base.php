@@ -10,10 +10,11 @@
     <link rel="stylesheet" type="text/css" href="<?php echo $this->e($requestRoot); ?>css/screen.css">
 </head>
 <body>
-    <div class="header">
-        <h1><?php echo $this->e($blogTitle); ?></h1>
-        <h2><?php echo $this->e($blogDescription); ?></h2>
-        <ul class="pages">
+    <header>
+    </header>
+    <div class="page">
+        <nav>
+            <ul>
 <?php foreach ($pagesList as $p): ?>
 <?php if (!$p['hidePage']): ?>
 <?php if ($p['fileName'] === $activePage): ?>
@@ -27,14 +28,17 @@
 <?php endif; ?>
 <?php endif; ?>
     <?php endforeach; ?>
-        </ul>
-    </div> <!-- /header -->
-    <div class="content">
-        <?php echo $this->section('content'); ?>
-    </div> <!-- /content -->
-
-    <div class="footer">
+            </ul>
+        </nav>
+        <main>
+            <?php echo $this->section('content'); ?>
+        </main>
+        <aside>
+            <?php echo $this->insert('aside', ['latestBlog' => $latestBlog]); ?>
+        </aside>
+    </div> <!-- /page -->
+    <footer>
         <p>&copy; <?php echo $this->e($currentYear); ?> <?php echo $this->e($blogAuthor); ?></p>
-    </div> <!-- /footer -->
+    </footer>
 </body>
 </html>

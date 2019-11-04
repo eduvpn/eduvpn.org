@@ -1,6 +1,6 @@
 <?php $this->layout('base'); ?>
 <?php $this->start('content'); ?>
-    <h2><?php echo $this->e($pageTitle); ?></h2>
+    <h1><?php echo $this->e($pageTitle); ?></h1>
     <p>
         <small><?php echo $this->e($post['published']); ?></small>
     </p>

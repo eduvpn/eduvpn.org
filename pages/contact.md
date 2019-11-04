@@ -6,26 +6,6 @@ title: Contact
 
 For general inquiries use our main contact address [eduvpn-support@lists.geant.org](mailto:eduvpn-support@lists.geant.org).
 
-#### Server Operators
-
-If you want to contact a particular server operator listed in the official 
-applications you can check the table below. Use it to report problems, or if 
-you do not (yet) have access to your country's server!
-
-Country         | Operator | Contact 
---------------- | -------- | ----------------------------------------------------------------
-Australia       | SURF     | _AARNet is not (yet) officially participating_
-Denmark         | DeiC     | [eduvpn@deic.dk](mailto:eduvpn@deic.dk)
-Finland         | CSC      | TBD
-France          | RENATER  | [https://assistance.renater.fr/](https://assistance.renater.fr/)
-Germany         | DFN      | [eduvpn@dfn.de](mailto:eduvpn@dfn.de)
-The Netherlands | SURF     | [eduvpn@surfnet.nl](mailto:eduvpn@surfnet.nl)
-Norway          | UNINETT  | [eduroam@uninett.no](eduroam@uninett.no)
-Pakistan        | PERN     | TBD
-Sri Lanka       | LEARN    | [eduvpn@learn.ac.lk](mailto:eduvpn@learn.ac.lk)
-Uganda          | RENU     | [systems@renu.ac.ug](mailto:systems@renu.ac.ug)
-Ukraine         | URAN     | [dopomoga@uran.ua](mailto:dopomoga@uran.ua)
-
 ### IRC
 
 Chat with us using IRC! Mostly for technical discussion.

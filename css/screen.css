@@ -1,48 +1,90 @@
-div.header {
-    background-color: #df7f0c;
-    padding: 1em;
-}
-
-ul.pages li.active a {
-    background-color: #444;
-    color: #fff;
-}
-
-div.header h1, div.header h2 {
-    text-align: center;
-}
-
-div.content {
+body {
+    max-width: 80em;
     margin: 0 auto;
-    max-width: 800px;
+    padding: 0.5em;
+    text-align: inherit;    /* override for bootstrap-reboot */
+}
+
+nav, main, aside {
+/*    border: 1px solid #f00;*/
+}
+
+div.page {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1.5em;
     text-align: justify;
     padding: 1em 1.5em;
     background-color: #fff;
 }
 
-ul.pages {
+nav {
+    min-width: 10em;
+}
+
+nav ul {
     padding: 0;
-    margin-top: 2em;
     text-align: center;
 }
 
-ul.pages li {
+nav ul li {
+    margin: 0.5em;
+    padding: 0.3em;
     list-style: none;
     display: inline-block;
-    padding: 1em 0.5em;
-    margin: 0.5em 0;
 }
 
-ul.pages li a {
-    background-color: #fff;
-    color: #444;
-    padding: 1em;
+nav ul li a {
+    color: #212529;
     text-decoration: none;
-    font-weight: bold;
 }
 
-div.content a {
+nav ul li.active a {
+    color: #007bff;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #007bff;
+}
+
+nav {
+    background-image: url("../img/eduvpn_logo.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0.5em;
+    padding-top: calc(50px + 1em);
+	width: 100%;
+}
+
+nav ul li a {
+    color: #212529;
+}
+
+nav ul li.active a {
+    color: #df7f0c;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #df7f0c;
+}
+
+main, aside {
+    padding: 0 0.5em;
+}
+
+main h1 {
+    text-align: center;
+	margin-bottom: 0.5em;
+    color: #df7f0c;
+}
+
+main a, aside a {
     text-decoration: underline;
+}
+
+aside {
+    min-width: 10em;
 }
 
 ul.index {
@@ -54,28 +96,28 @@ ul.index li {
     margin: 0.5em 0;
 }
 
-div.footer {
+footer {
     margin: 1.5em 0;
     color: #888;
     font-size: 75%;
     text-align: center;
 }
 
-div.footer a {
+footer a {
     color: #888;
 }
 
-div.content img, div.content video, div.content audio {
+main img, main video, main audio {
     display: block;
     margin: 0 auto;
     max-width: 95%;
 }
 
-div.content a img {
+main a img {
     margin: 0;
 }
 
-div.content a {
+main a, aside a {
     color: #df7f0c;
 }
 
@@ -127,6 +169,7 @@ small {
 }
 
 p.latest {
+    margin-top: 1em;
     border: 1px solid #df7f0c;
     padding: 1em;
     text-align: center;
@@ -138,26 +181,37 @@ p.latest a {
     font-weight: bold;
 }
 
-@media (min-width: 768px) {
-    div.header {
-        background: url(../img/header-small.jpg) no-repeat;
-        background-size: auto 225px;
-        height: 225px;
-    }
-
-    div.header h1, div.header h2 {
-        text-shadow: black 0 1px;
-        color: #fff;
-    }
-
-    ul.pages li.active a {
-        background-color: #df7f0c;
-        color: #fff;
-    }
+/* The application logo grid */
+div.apps {
+	text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1em 0;
 }
 
-@media (min-width: 2048px) {
-    div.header {
-        background: url(../img/header-big.jpg) no-repeat;
-    }    
+div.apps a {
+    width: 250px;
+    margin: 1em auto;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 1em;
+}
+
+div.apps span {
+    display: block;
+    padding: 1em 0 0 0;
+}
+
+@media (min-width: 800px) {
+    div.page {
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+    
+    nav ul li {
+        display: block;
+    }
+    
+    div.apps {
+        grid-template-columns: 1fr 1fr;
+    }
 }

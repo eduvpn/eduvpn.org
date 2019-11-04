@@ -6,28 +6,23 @@ Use the applications below to connect to your eduVPN server. See
 [app.eduvpn.org](https://app.eduvpn.org/) for a full list of applications and 
 release notes.
 
-### Windows
+To use eduVPN, download the app for your device below!
 
-[Download](https://app.eduvpn.org/windows/eduVPNClient_latest.exe)
-
-### Android
-
-[![Play Store](img/play-store.png)](https://play.google.com/store/apps/details?id=nl.eduvpn.app)
-
-### macOS
-
-[Download](https://app.eduvpn.org/mac/eduVPN_latest.dmg)
-
-### iOS
-
-[![App Store](img/app-store.png)](https://itunes.apple.com/nl/app/eduvpn-client/id1292557340?mt=8)
-
-### Linux
-
-We have an experimental eduVPN 
-[application](https://python-eduvpn-client.readthedocs.io/en/master/) for 
-Linux.
-
-Also check out the 
-[manual](https://github.com/eduvpn/documentation/blob/master/CLIENT_COMPAT.md#linux-1)
-configuration!
+<div class="apps">
+	<a target="_blank" href="https://app.eduvpn.org/windows/eduVPNClient_latest.exe">
+		<img width="200" height="29" src="img/Windows.png" alt="Windows">
+		<span>Download</span>
+	</a>
+	<a target="_blank" href="https://app.eduvpn.org/mac/eduVPN_latest.dmg">
+		<img width="200" height="29" src="img/macOS.png" alt="macOS">
+		<span>Download</span>
+	</a>
+	<a target="_blank" href="https://play.google.com/store/apps/details?id=nl.eduvpn.app">
+		<img width="200" height="29" src="img/Android.png" alt="Android">
+		<span>Download</span>
+	</a>
+	<a target="_blank" href="https://apps.apple.com/app/eduvpn-client/id1292557340">
+		<img width="200" height="29" src="img/iOS.png" alt="iOS">
+		<span>Download</span>
+	</a>
+</div>

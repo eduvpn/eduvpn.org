@@ -155,6 +155,7 @@ foreach ($postsList as $post) {
                 'activePage' => 'blog/index.html',
                 'pageTitle' => $post['title'],
                 'post' => $post,
+                'latestBlog' => false,
             ]
         );
         file_put_contents($blogOutputDir.'/'.$post['fileName'], $postPage);
