@@ -30,7 +30,7 @@ and Linux, as that would make it easy as possible to use eduVPN.
 The eduVPN server uses the community edition of OpenVPN. OpenVPN is one of 
 the most widely used open source VPN solutions.
 
-Occasionally we get the question which features eduVPN offers over competitors 
+Occasionally we get the question which features eduVPN offers over 'competitors' 
 and why we chose OpenVPN instead of any of the other available open source VPN 
 software protocols and implementations. In this post we'll dive into this and 
 explain the unique aspects of OpenVPN and eduVPN and why we have built eduVPN 
@@ -45,7 +45,7 @@ describe the features of the eduVPN software itself:
   Shibboleth, LDAP, RADIUS and ADFS;
 - Can be configured to:
   - Provide a secure VPN service to users accessing the Internet from 
-    potentially insecure locations, e.g. a coffee shop or train station;
+    potentially insecure locations, e.g. pubic WiFi in a coffee shop or train station;
   - Serve as a VPN gateway to allow users to access the organization network 
     from a remote location, e.g. working from home;
 - Simple, but powerful permission management;
@@ -69,8 +69,7 @@ did consider a number of other protocols and implementations. We'll describe
 each of them in more detail. Note that some of them were not yet available 
 around the time the eduVPN project started.
 
-When comparing VPN technologies, we considered the following criteria by which
-to compare them:
+When evaluating different VPN technologies, we considered the following criteria:
 
 - Does it work over TCP? This is important to work around broken network setups 
   where UDP is blocked. Quite a few locations block all traffic except HTTP and 
@@ -90,7 +89,7 @@ to compare them:
   your home router running OpenWRT?
 - Were (security) audits performed on the software and the protocol?
 - Is the software available as open source?
-- Is the VPN protocol used an open standard?
+- Is the VPN protocol an open standard?
 
 ### PPTP
 
@@ -126,10 +125,12 @@ the OpenConnect protocol has been written down in an, by now expired,
 [IETF draft](https://tools.ietf.org/html/draft-mavrogiannopoulos-openconnect-02) 
 document.
 
-There were two big drawbacks to using OpenConnect: first, we couldn't find any 
+There were three drawbacks to using OpenConnect: first, we couldn't find any 
 documentation or other proof that the software received a third party audit. 
 Second, the OpenConnect project didn't have "ready to use" clients available 
-for the major platforms we wanted to support.
+for the major platforms we wanted to support. Third, this opensource project mimicks
+three proprietary VPN products and therefor the future roadmap is highly controlled by
+closed source products.
 
 ### Streisand
 
@@ -161,20 +162,14 @@ increases the chances the project will live a long life. In addition, it
 assures there is a lot of documentation available, also regarding integration 
 in a variety of different systems and platforms.
 
-Furthermore, OpenVPN received extensive 
-[audits](https://openvpn.net/security-advisory/security-audit-vulnerabilities-resolved/) 
-over the years.
+Furthermore, OpenVPN received extensive independent audits over the years. A recent report is found
+[here](https://openvpn.net/security-advisory/security-audit-vulnerabilities-resolved/).
 
 OpenVPN has the built-in capability to tunnel over TCP, which, as mentioned 
 before, is important to work in environments where UDP traffic is blocked on 
 otherwise unreliable. OpenVPN had working clients available for all platforms 
 we wanted to support, and more. 
 
-### TODO
-
-- more links to audits;
-- mention OpenVPN-nl?
-- mention Tunnelkit?
 
 ## Conclusion
 
