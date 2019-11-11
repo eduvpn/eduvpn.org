@@ -4,7 +4,7 @@ require_once dirname(__DIR__).'/vendor/autoload.php';
 $baseDir = dirname(__DIR__);
 
 use eduVPN\Web\Markdown;
-use fkooman\Tpl\Template;
+use fkooman\Template\Tpl;
 
 $dateTime = new DateTime();
 $postDir = sprintf('%s/posts', $baseDir);
@@ -21,7 +21,7 @@ $templateDir = sprintf('%s/views', $baseDir);
 
 $md = new Markdown();
 
-$templates = new Template([$templateDir]);
+$templates = new Tpl([$templateDir]);
 $templates->addDefault(
     [
         'blogTitle' => 'eduVPN',

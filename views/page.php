@@ -7,4 +7,4 @@ Read our Latest Blog Post <a href="blog/<?php echo $this->e($latestBlog['fileNam
 </p>
 <?php endif; ?>
     <?php echo $pageContent['htmlContent']; ?>
-<?php $this->stop(); ?>
+<?php $this->stop('content'); ?>

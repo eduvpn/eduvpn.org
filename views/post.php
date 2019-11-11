@@ -16,4 +16,4 @@
 <?php endif; ?>
     <p class="center">    <small><a href="index.html">Blog Index</a></small>
 </p>
-<?php $this->stop(); ?>
+<?php $this->stop('content'); ?>
