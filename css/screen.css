@@ -5,6 +5,15 @@ body {
     text-align: inherit;    /* override for bootstrap-reboot */
 }
 
+a {
+    text-decoration: none;
+}
+    
+a:hover {
+    color: #df7f0c;
+    text-decoration: underline;
+}
+
 nav, main, aside {
 /*    border: 1px solid #f00;*/
 }
@@ -43,11 +52,6 @@ nav ul li.active a {
     color: #007bff;
 }
 
-nav ul li a:hover {
-    text-decoration: none;
-    color: #007bff;
-}
-
 nav {
     background-image: url("../img/eduvpn_logo.png");
     background-repeat: no-repeat;
@@ -77,10 +81,6 @@ main h1 {
     text-align: center;
 	margin-bottom: 0.5em;
     color: #df7f0c;
-}
-
-main a, aside a {
-    text-decoration: underline;
 }
 
 aside {
@@ -161,6 +161,12 @@ tbody tr:nth-child(even) {
 
 p.center {
     text-align: center;
+}
+
+p.date {
+    text-align: end;
+    font-size: small;
+    color: gray;
 }
 
 small {

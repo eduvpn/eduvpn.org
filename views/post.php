@@ -1,9 +1,7 @@
 <?php $this->layout('base'); ?>
 <?php $this->start('content'); ?>
     <h1><?php echo $this->e($pageTitle); ?></h1>
-    <p>
-        <small><?php echo $this->e($post['published']); ?></small>
-    </p>
+    <p class="date"><?php echo $this->e($post['published']); ?></p>
 
     <?php echo $post['htmlContent']; ?>
 
