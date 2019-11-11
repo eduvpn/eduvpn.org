@@ -1,6 +1,6 @@
 ---
 title: VPN Product and Technology Comparison
-published: 2019-11-10
+published: 2019-11-11
 ---
 
 ## Introduction
