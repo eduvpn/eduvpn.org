@@ -6,16 +6,12 @@ body {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
 }
     
 a:hover {
     color: #df7f0c;
     text-decoration: underline;
-}
-
-nav, main, aside {
-/*    border: 1px solid #f00;*/
 }
 
 div.page {
