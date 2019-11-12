@@ -19,6 +19,7 @@ Finland         | CSC      | TBD
 France          | RENATER  | [https://assistance.renater.fr/](https://assistance.renater.fr/)
 Germany         | DFN      | [eduvpn@dfn.de](mailto:eduvpn@dfn.de)
 The Netherlands | SURF     | [eduvpn@surfnet.nl](mailto:eduvpn@surfnet.nl)
+Morocco         | MARWAN   | [eduvpn@marwan.ma](mailto:eduvpn@marwan.ma)
 Norway          | UNINETT  | [eduroam@uninett.no](eduroam@uninett.no)
 Pakistan        | PERN     | TBD
 Sri Lanka       | LEARN    | [eduvpn@learn.ac.lk](mailto:eduvpn@learn.ac.lk)
