@@ -173,8 +173,7 @@ we wanted to support, and more.
 
 ## Conclusion
 
-As no VPN technology existed that offered features required by eduVPN we decided to build those features on top of an existing VPN technology. We believe this technology should be released as open source software, that 
-has been audited by third parties. VPN technology already undergone these audits had an advantage in our evaluation. In addition, a product that has a extensive community including support for generic devices (smartphones, laptops, desktops) is a big plus. Being able to operate in restricted networks, e.g. networks where there is limited or broken UDP connectivity is a must.
+As no VPN products existed that offered features required by eduVPN we decided to build those features on top of an existing products. We believe VPN technology should be released as open source software, that 
+has been audited by third parties. Products already undergone these audits had an advantage in our evaluation. In addition, a product that has a extensive community including support for generic devices (smartphones, laptops, desktops) is a big plus. Being able to operate in restricted networks, e.g. networks where there is limited or broken UDP connectivity is a must.
 
-One VPN technology scored best in our evaluation: OpenVPN 2.x, the community edition of 
-OpenVPN. Therefor we decided to add the required eduVPN features on top of this technology.
+One VPN technology scored best in our evaluation: OpenVPN the community edition. Therefor we decided to add the required eduVPN features on top of this technology.
