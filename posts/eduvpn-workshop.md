@@ -17,7 +17,7 @@ workshop were:
   management/monitoring. 
 
 Representatives from the following NRENs attended the workshop: DeiC, AARNet, 
-GÉANT, SURFnet, RENATER, DFN, UNINETT, RENU, CSC and PSNC. A more detailed 
+GÉANT, SURFnet, RENATER, DFN, Uninett, RENU, CSC and PSNC. A more detailed 
 agenda of the event is shown below:
 
 ![eduVPN workshop](../img/eduvpn_workshop_nov18-2.jpg)

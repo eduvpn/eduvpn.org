@@ -15,12 +15,12 @@ Country         | Operator | Contact
 --------------- | -------- | ----------------------------------------------------------------
 Australia       | SURF     | _AARNet is not (yet) officially participating_
 Denmark         | DeiC     | [eduvpn@deic.dk](mailto:eduvpn@deic.dk)
-Finland         | CSC      | TBD
+Finland         | CSC      | eduvpn(at)csc.fi
 France          | RENATER  | [https://assistance.renater.fr/](https://assistance.renater.fr/)
 Germany         | DFN      | [eduvpn@dfn.de](mailto:eduvpn@dfn.de)
 The Netherlands | SURF     | [eduvpn@surfnet.nl](mailto:eduvpn@surfnet.nl)
 Morocco         | MARWAN   | [eduvpn@marwan.ma](mailto:eduvpn@marwan.ma)
-Norway          | UNINETT  | [eduroam@uninett.no](eduroam@uninett.no)
+Norway          | Uninett  | [eduroam@uninett.no](eduroam@uninett.no)
 Pakistan        | PERN     | TBD
 Sri Lanka       | LEARN    | [eduvpn@learn.ac.lk](mailto:eduvpn@learn.ac.lk)
 Uganda          | RENU     | [systems@renu.ac.ug](mailto:systems@renu.ac.ug)
