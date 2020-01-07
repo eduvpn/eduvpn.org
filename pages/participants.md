@@ -25,3 +25,5 @@ Pakistan        | PERN     | TBD
 Sri Lanka       | LEARN    | [eduvpn@learn.ac.lk](mailto:eduvpn@learn.ac.lk)
 Uganda          | RENU     | [systems@renu.ac.ug](mailto:systems@renu.ac.ug)
 Ukraine         | URAN     | [dopomoga@uran.ua](mailto:dopomoga@uran.ua)
+
+You check the current server status on [https://status.eduvpn.org/](https://status.eduvpn.org/).
