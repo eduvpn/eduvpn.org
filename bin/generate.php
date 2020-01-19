@@ -67,6 +67,7 @@ foreach (glob(sprintf('%s/*.md', $postDir)) as $postFile) {
         'title' => $postInfo['title'],
         'modified' => isset($postInfo['modified']) ? $postInfo['modified'] : null,
         'fileName' => $postOutputFile,
+        'hide' => isset($postInfo['hide']) ? $postInfo['hide'] : 'no',
     ];
 
     $postsList[] = $blogPost;
@@ -80,6 +81,9 @@ $postsYearList = [];
 foreach ($postsList as $postInfo) {
     $postDate = new DateTime($postInfo['published']);
     $postYear = $postDate->format('Y');
+    if ('yes' === $postInfo['hide']) {
+        continue;
+    }
     if (!array_key_exists($postYear, $postsYearList)) {
         $postsYearList[$postYear] = [];
     }
@@ -109,12 +113,23 @@ foreach (glob(sprintf('%s/*.md', $pageDir)) as $pageFile) {
 
     fclose($f);
     $pageOutputFile = basename($pageFile, '.md').'.html';
+
+    // find latest blog
+    foreach ($postsList as $k => $postInfo) {
+        if ('yes' === $postInfo['hide']) {
+            continue;
+        }
+        $latestBlogIndex = $k;
+
+        break;
+    }
+
     $page = [
         'htmlContent' => $md->transform($buffer),
         'title' => $pageInfo['title'],
         'fileName' => $pageOutputFile,
         'priority' => isset($pageInfo['priority']) ? (int) $pageInfo['priority'] : 255,
-        'latestBlog' => isset($pageInfo['latest_blog']) ? $postsList[0] : false,
+        'latestBlog' => isset($pageInfo['latest_blog']) ? $postsList[$latestBlogIndex] : false,
         'hidePage' => isset($pageInfo['hide-page']) ? 'yes' === $pageInfo['hide-page'] : false,
     ];
     $pagesList[] = $page;
