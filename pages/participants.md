@@ -15,6 +15,7 @@ Country         | Operator | Contact
 --------------- | -------- | ----------------------------------------------------------------
 Australia       | SURF     | _AARNet is not (yet) officially participating_
 Denmark         | DeiC     | [eduvpn@deic.dk](mailto:eduvpn@deic.dk)
+Estonia         | EENet    | [eduvpn@eenet.ee](mailto:eduvpn@eenet.ee)
 Finland         | CSC      | eduvpn(at)csc.fi
 France          | RENATER  | [https://assistance.renater.fr/](https://assistance.renater.fr/)
 Germany         | DFN      | [eduvpn@dfn.de](mailto:eduvpn@dfn.de)
