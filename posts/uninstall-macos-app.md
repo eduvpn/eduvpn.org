@@ -13,7 +13,7 @@ Run the following commands in a terminal to fully remove the service:
     $ sudo launchctl remove org.eduvpn.app.openvpnhelper
     $ sudo rm -f /Library/LaunchDaemons/org.eduvpn.app.openvpnhelper.plist
     $ sudo rm -f /Library/PrivilegedHelperTools/org.eduvpn.app.openvpnhelper
-    $ defaults delete org.eduvpn.app SUHasLauchedBefore
+    $ defaults delete org.eduvpn.app SUHasLaunchedBefore
 
 And the application data:
 
