@@ -13,7 +13,7 @@ To use eduVPN, download the app for your device below!
 		<img width="200" height="29" src="img/Windows.png" alt="Windows">
 		<span>Download</span>
 	</a>
-	<a target="_blank" href="https://app.eduvpn.org/mac/eduVPN_latest.dmg">
+	<a target="_blank" href="https://apps.apple.com/app/eduvpn-client/id1317704208?mt=12">
 		<img width="200" height="29" src="img/macOS.png" alt="macOS">
 		<span>Download</span>
 	</a>
