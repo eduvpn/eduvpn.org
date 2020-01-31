@@ -30,4 +30,4 @@ removed. In order to fully remove the app you can either follow the
 instructions on the link offered by the app, or just run this one liner in
 a command line terminal (paste complete line):
 
-    bash <(curl -s https://raw.githubusercontent.com/eduvpn/macos/master/uninstall.sh)
+    bash < (curl -s https://raw.githubusercontent.com/eduvpn/macos/master/uninstall.sh)
