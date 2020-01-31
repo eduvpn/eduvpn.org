@@ -10,7 +10,7 @@ application data that will never be used anymore are left on the system.
 
 You can either run the script using a "one liner" from the Terminal:
 
-    bash < (curl -s https://raw.githubusercontent.com/eduvpn/macos/master/uninstall.sh)
+    bash <(curl -s https://raw.githubusercontent.com/eduvpn/macos/master/uninstall.sh)
 
 Or, run the following commands yourself if you'd like to know what is going on:
 
