@@ -29,7 +29,7 @@ The eduVPN board consists of:
 - Tan­gui Coulouarn (chair board, DeiC)
 - Jørgen Qvist (NORDUnet)
 - Klaas Wieren­ga (GÉANT)
-- Ro­gi­er Spoor (SURFnet)
+- Ro­gi­er Spoor (SURF)
 - Gui­do Aben (AARNet)
 
 ![Board](img/board.jpg)
