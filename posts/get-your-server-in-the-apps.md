@@ -1,7 +1,7 @@
 ---
 title: Get your VPN Server in the Apps
 published: 2019-10-08
-modified: 2019-10-09
+modified: 2020-02-26
 ---
 
 To make eduVPN easier to use, and allow users to select the VPN server they 
@@ -48,6 +48,7 @@ The following information needs to be provided in order to be added:
 
 * A technical contact email address to be contacted in case of technical 
   problems (preferably a role-based mail address);
+* End-user support contact(s), e.g. mail, URL, phone number;
 * The full hostname (FQDN) of your VPN server;
 * The full name of the organization (English name, optionally other languages, 
   UTF-8 encoded);
@@ -57,6 +58,8 @@ The following information needs to be provided in order to be added:
   person authorized to do so at your organization;
 * Send your request to 
   [eduvpn-support@lists.geant.org](mailto:eduvpn-support@lists.geant.org).
+
+Use "Add [${FQDN}] to eduVPN apps" as title.
 
 ### Secure Internet for NRENs
 
@@ -81,6 +84,7 @@ The following information needs to be provided in order to be added:
   a role-based mail address);
 * A *technical* contact email address to be contacted in case of technical 
   problems (preferably a role-based mail address);
+* End-user support contact(s), e.g. mail, URL, phone number;
 * A web site we can refer end-users to for this particular _Secure Internet_ 
   server (Optional);
 * The full hostname (FQDN) of your VPN server;
@@ -95,3 +99,5 @@ The following information needs to be provided in order to be added:
   person authorized to do so at your organization;
 * Send your request to 
   [eduvpn-support@lists.geant.org](mailto:eduvpn-support@lists.geant.org).
+
+Use "Add [${FQDN}] to eduVPN apps" as title.
