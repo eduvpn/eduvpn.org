@@ -21,7 +21,7 @@ France          | RENATER  | [https://assistance.renater.fr/](https://assistance
 Germany         | DFN      | [eduvpn@dfn.de](mailto:eduvpn@dfn.de)
 The Netherlands | SURF     | [eduvpn@surfnet.nl](mailto:eduvpn@surfnet.nl)
 Morocco         | MARWAN   | [eduvpn@marwan.ma](mailto:eduvpn@marwan.ma)
-Norway          | Uninett  | [eduroam@uninett.no](eduroam@uninett.no)
+Norway          | Uninett  | [eduroam@uninett.no](mailto:eduroam@uninett.no)
 Pakistan        | PERN     | TBD
 Sri Lanka       | LEARN    | [eduvpn@learn.ac.lk](mailto:eduvpn@learn.ac.lk)
 Uganda          | RENU     | [systems@renu.ac.ug](mailto:systems@renu.ac.ug)
