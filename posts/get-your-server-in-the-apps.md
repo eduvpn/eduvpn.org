@@ -9,6 +9,10 @@ want to connect to, it makes sense to have them registered to be listed in the
 official eduVPN apps. This post is meant for institutes or NRENs setting up 
 their own VPN server, not for end-users of eduVPN.
 
+**NOTE**: even without being included in the official eduVPN apps you can test
+your server using the eduVPN apps! You can simply provide the hostname of your 
+VPN server through "Add other address" or similar options in the app(s).
+
 In order to optimize the process for getting your eduVPN server listed in 
 the official eduVPN [apps](../apps.html) we outline the procedure here. Mostly 
 as a public place we can refer to. In addition to our 
