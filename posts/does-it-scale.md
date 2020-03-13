@@ -3,12 +3,13 @@ title: Does it scale?
 published: 2020-03-12
 ---
 
-Because of the [COVID-19](https://en.wikipedia.org/wiki/Coronavirus_disease_2019) 
-crisis, a lot of people are sent home and need to work remotely using VPNs. And 
-often, the current solutions used by institutions cannot face a situation where 
-most of their employees work remotely, because of hardware, licenses, etc. 
-eduVPN is a credible alternative solution which does not suffer from these 
-limitations, provided you have enough CPUs and network capacity. 
+With the ongoing global 
+[COVID-19](https://en.wikipedia.org/wiki/Coronavirus_disease_2019) crisis, many 
+people need to start working from home. Typically, the use of a VPN is required 
+to be able to keep working. Many current VPN solutions used by institutions can 
+not cope with this situation, either due to hardware, software or license 
+restrictions. eduVPN is a credible solution which does not suffer from these 
+limitations and scales with your hardware, i.e. CPU and network capacity.
 
 Most organizations start by deploying a single server, which can scale quite 
 well to around 1000 simultaneously connected clients assuming at least 16 CPU 
@@ -34,6 +35,8 @@ typical deploy looks like this:
 * Machine 1 has both controller and node functionality in location X;
 * Machine 2 has node functionality in location Y;
 * Machine n has node functionality in location N.
+
+![Scaling Architecture Overview](../img/scaling.png)
 
 In order to securely add node(s) to your VPN setup we implemented a simple VPN 
 daemon that runs on the node(s). The communication channel between the 
