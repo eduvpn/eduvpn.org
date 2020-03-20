@@ -54,8 +54,9 @@ The following information needs to be provided in order to be added:
   problems (preferably a role-based mail address);
 * End-user support contact(s), e.g. mail, URL, phone number;
 * The full hostname (FQDN) of your VPN server;
-* The full name of the organization (English name, optionally other languages, 
-  UTF-8 encoded);
+* The "display name" of the organization (English name, optionally other 
+  languages, UTF-8 encoded, **NOTE**: do not make it too long as it may not fit
+  in the UI on some (mobile) devices...);
 * A 350x150px logo (PNG format);
 * A signed copy of the 
   [policy](../download/eduVPN_Compliance_Statement_1.0.pdf) document by a 
