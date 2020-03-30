@@ -183,6 +183,19 @@ p.latest a {
     font-weight: bold;
 }
 
+p.lc {
+    margin-top: 1em;
+    border: 1px solid #007bff;
+    padding: 1em;
+    text-align: center;
+    color: #007bff;
+}
+
+p.lc a {
+    color: #007bff;
+    font-weight: bold;
+}
+
 /* The application logo grid */
 div.apps {
 	text-align: center;
