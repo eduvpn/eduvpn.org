@@ -2,10 +2,6 @@
 title: Apps
 ---
 
-Use the applications below to connect to your eduVPN server. See 
-[app.eduvpn.org](https://app.eduvpn.org/) for a full list of applications and 
-release notes.
-
 To use eduVPN, download the app for your device below!
 
 <div class="apps">
@@ -26,3 +22,7 @@ To use eduVPN, download the app for your device below!
 		<span>Download</span>
 	</a>
 </div>
+
+If you use a system not listed above, or you prefer a manual configuration, 
+e.g. using a third party application, look 
+[here](https://github.com/eduvpn/documentation/blob/v2/CLIENT_COMPAT.md).
