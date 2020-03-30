@@ -28,6 +28,7 @@ $tpl->addDefault(
         'blogDescription' => 'Safe and Trusted',
         'blogAuthor' => 'eduVPN',
         'generatedOn' => $dateTime->format(DateTime::ATOM),
+        'unixTime' => $dateTime->getTimestamp(),
         'currentYear' => $dateTime->format('Y'),
     ]
 );
