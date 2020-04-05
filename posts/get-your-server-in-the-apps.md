@@ -98,7 +98,9 @@ The following information needs to be provided in order to be added:
 * A 350x150px logo/flag (PNG format);
 * Full information on any filtering/blocking of traffic by your VPN server or 
   upstream network;
-* The public key of your server (`sudo vpn-user-portal-show-oauth-key`);
+* The public key of your server (`sudo vpn-user-portal-show-oauth-key`), make
+  sure to enable 
+  [guest access](https://github.com/eduvpn/documentation/blob/v2/GUEST_USAGE.md)!;
 * A signed copy of the 
   [policy](../download/eduVPN_Compliance_Statement_1.0.pdf) document by a 
   person authorized to do so at your organization;
