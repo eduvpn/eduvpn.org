@@ -54,6 +54,8 @@ The following information needs to be provided in order to be added:
   problems (preferably a role-based mail address);
 * End-user support contact(s), e.g. mail, URL, phone number;
 * The full hostname (FQDN) of your VPN server;
+* Make sure TLS is configured properly! Use e.g. 
+  [SSL Server Test](https://www.ssllabs.com/ssltest/);
 * The "display name" of the organization (English name, optionally other 
   languages, UTF-8 encoded, **NOTE**: do not make it too long as it may not fit
   in the UI on some (mobile) devices...);
@@ -93,6 +95,8 @@ The following information needs to be provided in order to be added:
 * A web site we can refer end-users to for this particular _Secure Internet_ 
   server (Optional);
 * The full hostname (FQDN) of your VPN server;
+* Make sure TLS is configured properly! Use e.g. 
+  [SSL Server Test](https://www.ssllabs.com/ssltest/);
 * The country / region your VPN server is located in (English name, optionally 
   other languages, UTF-8 encoded);
 * A 350x150px logo/flag (PNG format);

@@ -18,4 +18,16 @@ It has received funding from the
 [Vietsch Foundation](http://www.vietsch-foundation.org/), 
 [RIPE](https://www.ripe.net/) and the [NLnet Foundation](https://nlnet.nl/).
 
-![Participants](img/about_logos.png)
+<div class="sponsors">
+    <a href="https://ec.europa.eu/"><img width="300" height="120" src="img/ec.jpg" alt="European Commission"></a>
+    <a href="https://nlnet.nl/"><img width="300" height="120" src="img/nlnet.jpg" alt="NLnet Foundation"></a>
+    <a href="https://www.sidnfonds.nl/"><img width="300" height="120" src="img/sidnfonds.jpg" alt="SIDN fonds"></a>
+    <a href="https://www.ngi.eu/ngi-projects/ngi-trust/"><img width="300" height="120" src="img/ngi-trust.png" alt="NGI TRUST"></a>
+    <a href="https://commonsconservancy.org/"><img width="300" height="120" src="img/commons_conservancy.png" alt="The Commons Conservancy"></a>
+    <a href="https://www.deic.dk/"><img width="300" height="120" src="img/deic.png" alt="DeiC"></a>
+    <a href="https://www.geant.org/"><img width="300" height="120" src="img/geant.jpg" alt="GÉANT"></a>
+    <a href="https://www.nordu.net/"><img width="300" height="120" src="img/nordunet.png" alt="NORDUnet"></a>
+    <a href="https://www.surf.nl/"><img width="300" height="120" src="img/surf.png" alt="SURF"></a>
+    <a href="https://www.vietsch-foundation.org/"><img width="300" height="120" src="img/vietsch.jpg" alt="The Vietsch Foundation"></a>
+    <a href="https://www.ripe.net/"><img width="300" height="120" src="img/ripencc.jpg" alt="RIPE NCC"></a>
+</div>
