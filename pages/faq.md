@@ -5,9 +5,15 @@ hide-page: yes
 
 ## Client
 
-### Q1
+### After install, client asks "repair" or "uninstall" (Windows)
+Some users experience after installing the eduVPN Windows clients an notification "repair or uninstall" the client.
+The notification indicates an eduVPN component didn't install correctly. Sometimes a Windows reboot solves the issue. In other cases we noticed Window update was not working, so the computer wasn't up to date. Trying to fix the Windows update functionality might solve the issue.
 
-### Q2 
+### Virusscanner reports suspicious software when installing client" (Windows)
+Be certain you've downloaded the eduVPN via [https://app.eduvpn.org/](https://app.eduvpn.org/) If this is the case it is probably a false positive notification. Nowadays Virusscanners use whitelisting mechanisms which mean that if we release a new version, they might alert because they didn't see the binary anywhere before. In order to avoid false positives we will always upload our new eduVPN clients to [Virustotal](https://www.virustotal.com/) Via this platform all Virusscanners will become aware of our new software releases. You can always check our binaries yourselves via VirusTotal, just upload the binary and view the report.
+
+
+
 
 ## Server
 
