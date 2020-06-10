@@ -3,6 +3,14 @@ title: FAQ
 hide-page: yes
 ---
 
+## Client
+
+### Q1
+
+### Q2 
+
+## Server
+
 ### Can we have an IPv4 only VPN?
 
 eduVPN is a full dual-stack IPv6 solution. It was built from the start with 
