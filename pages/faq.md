@@ -38,7 +38,7 @@ to avoid false positives we will always upload our new eduVPN clients to
 will become aware of our new software releases. You can always check our 
 binaries yourselves via VirusTotal, just upload the binary and view the report.
 
-### eduVPN client is only available in Appstore for macOS 10.14 and higher (macOS)
+### eduVPN client is only available in App Store for macOS 10.14 and higher (macOS)
 
 In order to 'be' in the Appstore with the eduVPN client we had to implement a 
 specific functionality (NetworkExtensions). This is only available for macOS 
