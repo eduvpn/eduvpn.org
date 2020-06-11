@@ -19,10 +19,9 @@ included, because this bug information will be public.
 
 ### After install, client asks "repair" or "uninstall" (Windows)
 
-After installing the eduVPN Windows client, some users experience a 
-notification "repair or uninstall" the client.
+After installing the eduVPN Windows client, some users experience a "repair or uninstall" notification the client.
 
-The notification indicates an eduVPN component didn't install correctly. 
+The notification indicates that an eduVPN component didn't install correctly. 
 Sometimes a Windows reboot solves the issue. In other cases we noticed Windows 
 update was not working, so the computer wasn't up to date. Trying to fix the 
 Windows update functionality might solve the issue.
