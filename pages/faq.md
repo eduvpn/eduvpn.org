@@ -5,7 +5,7 @@ hide-page: yes
 
 ## Client
 
-### I found a bug in the eduVPN client, how can I report ir?
+### I found a bug in the eduVPN client, how can I report it?
 
 All known issues in the eduVPN clients will be put in GitHub. Please report 
 issues with detailed information including OS version, client version and 
