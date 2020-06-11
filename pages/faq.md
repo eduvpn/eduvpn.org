@@ -7,7 +7,7 @@ hide-page: yes
 
 ### I found a bug in the eduVPN client, how can I report it?
 
-All known issues in the eduVPN clients will be put in GitHub. Please report 
+All known issues in the eduVPN clients are published on GitHub. Please report 
 issues with detailed information including OS version, client version and 
 log-files directly in GitHub. Please make sure there is no personal data 
 included, because this bug information will be public.
