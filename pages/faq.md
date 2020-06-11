@@ -19,36 +19,36 @@ included, because this bug information will be public.
 
 ### After install, client asks "repair" or "uninstall" (Windows)
 
-After installing the eduVPN Windows client, some users experience a "repair or uninstall" notification the client.
+After installing the eduVPN Windows client, some users experience a "repair or uninstall" notification in the client.
 
 The notification indicates that an eduVPN component didn't install correctly. 
-Sometimes a Windows reboot solves the issue. In other cases we noticed Windows 
+Sometimes a Windows reboot solves the issue. In other cases, we noticed Windows 
 update was not working, so the computer wasn't up to date. Trying to fix the 
 Windows update functionality might solve the issue.
 
-### Virus scanner reports suspicious software when installing client (Windows)
+### Virus scanner reports suspicious software when installing the client (Windows)
 
-Be certain you've downloaded the eduVPN via 
-[https://app.eduvpn.org/](https://app.eduvpn.org/) If this is the case it is 
+Make sure you've downloaded the eduVPN client via 
+[https://app.eduvpn.org/](https://app.eduvpn.org/) If this is the case, it is 
 probably a false positive notification. Nowadays some virus scanners accept 
 only applications they know about, which means that if we release a new version, 
-they might alert because they didn't see the binary anywhere before. In order 
-to avoid false positives we will always upload our new eduVPN clients to 
-[Virustotal](https://www.virustotal.com/) Via this platform all virus scanners 
+they might alert you because they didn't see the binary anywhere before. In order 
+to avoid false positives, we will always upload our new eduVPN clients to 
+[Virustotal](https://www.virustotal.com/) Via this platform, all virus scanners 
 will become aware of our new software releases. You can always check our 
 binaries yourselves via VirusTotal, just upload the binary and view the report.
 
-### eduVPN client is only available in App Store for macOS 10.14 and higher (macOS)
+### eduVPN client is only available in the App Store for macOS 10.14 and higher (macOS)
 
-In order to 'be' in the Appstore with the eduVPN client we had to implement a 
+In order to 'be' in the App Store with the eduVPN client, we had to implement a 
 specific functionality (NetworkExtensions). This is only available for macOS 
-10.14 and later. For users with older macOS versions we advice to use 
+10.14 and later. For users with older macOS versions, we advice to use 
 [Tunnelblick](https://tunnelblick.net/). How to use it? Install the Tunnelblick 
 client, login to your eduVPN server, go to "configurations" and create a 
 configuration. You can download the configuration file as .ovpn and import it 
 in Tunnelblick. You can now start/stop the VPN in Tunnelblick. **Be aware** the 
 configuration file has an expiry time (by default 90 days). When the 
-configuration expires you can't use it anymore in Tunnelblick and need to 
+configuration expires, you can't use it anymore in Tunnelblick and need to 
 create and download a new one. Unfortunately you won't get any descent 
 notification about the expiry, it just won't connect. However in the log-file 
 of Tunnelblick you can see the certificate expired.
