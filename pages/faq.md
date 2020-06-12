@@ -1,6 +1,5 @@
 ---
 title: FAQ
-hide-page: yes
 ---
 
 ## Client
@@ -19,7 +18,8 @@ included, because this bug information will be public.
 
 ### After install, client asks "repair" or "uninstall" (Windows)
 
-After installing the eduVPN Windows client, some users experience a "repair or uninstall" notification in the client.
+After installing the eduVPN Windows client, some users experience a "repair or 
+uninstall" notification in the client.
 
 The notification indicates that an eduVPN component didn't install correctly. 
 Sometimes a Windows reboot solves the issue. In other cases, we noticed Windows 
@@ -41,7 +41,7 @@ binaries yourselves via VirusTotal, just upload the binary and view the report.
 ### eduVPN client is only available in the App Store for macOS 10.14 and higher (macOS)
 
 In order to 'be' in the App Store with the eduVPN client, we had to implement a 
-specific functionality (NetworkExtensions). This is only available for macOS 
+specific functionality (`NetworkExtensions`). This is only available for macOS 
 10.14 and later. For users with older macOS versions, we advice to use 
 [Tunnelblick](https://tunnelblick.net/). How to use it? Install the Tunnelblick 
 client, login to your eduVPN server, go to "configurations" and create a 
