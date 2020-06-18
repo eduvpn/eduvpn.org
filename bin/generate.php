@@ -18,6 +18,7 @@ $templateDir = sprintf('%s/views', $baseDir);
 @mkdir($outputDir.'/img', 0755, true);
 @mkdir($outputDir.'/download', 0755, true);
 @mkdir($outputDir.'/css', 0755, true);
+@mkdir($outputDir.'/fonts', 0755, true);
 
 $md = new Markdown();
 
@@ -193,7 +194,7 @@ foreach ($pagesList as $page) {
     file_put_contents($outputDir.'/'.$page['fileName'], $pagePage);
 }
 
-foreach (['img', 'download', 'css'] as $pathName) {
+foreach (['img', 'download', 'css', 'fonts'] as $pathName) {
     foreach (glob($baseDir.'/'.$pathName.'/*') as $file) {
         copy($file, $outputDir.'/'.$pathName.'/'.basename($file));
     }
