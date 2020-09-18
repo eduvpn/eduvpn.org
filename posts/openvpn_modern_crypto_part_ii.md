@@ -65,7 +65,6 @@ This looks good! With modern Linux distributions we mean Fedora, Debian 10,
 Ubuntu 20.04, and any other distribution or OS with OpenSSL >= 1.1.1.
 
 It seems we should be able to update to TLSv1.3 and EdDSA in the next major 
-version of eduVPN / Let's Connect!. The official clients are based on OpenVPN 
-(Community) and the TunnelKit library used by Passepartout. Added benefit is 
-that by migrating to EdDSA we'll keep supporting other OpenVPN clients on 
-unsupported platforms as well!
+version of eduVPN / Let's Connect!. The eduVPN / Let's Connect! apps are based 
+on OpenVPN (Community) and the TunnelKit library used by Passepartout. We'll 
+even keep supporting the standard OpenVPN clients!
