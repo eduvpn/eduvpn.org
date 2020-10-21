@@ -11,6 +11,9 @@ end-users of eduVPN.
 your server using the eduVPN apps! You can simply provide the hostname of your 
 VPN server through "Add other address" or similar options in the app(s).
 
+**NOTE**: please make sure your server is fully up to date and working properly 
+before requesting to be added to the applications.
+
 This page shows the information we need to add your server. This is a more 
 concrete version of the 
 [policy](download/eduVPN_Compliance_Statement_1.0.pdf) document. Make sure you 
@@ -47,7 +50,8 @@ The following information needs to be provided in order to be added:
 
 * A technical contact email address to be contacted in case of technical 
   problems (preferably a role-based mail address);
-* End-user support contact(s), at least one of: mail, URL, phone number;
+* End-user support contact(s), at least one of: mail, URL, phone number. 
+  **NOTE** these will become public;
 * The full hostname (FQDN) of your VPN server;
 * Make sure TLS is configured properly! Use e.g. 
   [SSL Server Test](https://www.ssllabs.com/ssltest/);
@@ -87,7 +91,8 @@ The following information needs to be provided in order to be added:
   a role-based mail address);
 * A *technical* contact email address to be contacted in case of technical 
   problems (preferably a role-based mail address);
-* End-user support contact(s), at least one of: mail, URL, phone number;
+* End-user support contact(s), at least one of: mail, URL, phone number.
+  **NOTE** these will become public;
 * A web site we can refer end-users to for this particular _Secure Internet_ 
   server (Optional);
 * The full hostname (FQDN) of your VPN server;
