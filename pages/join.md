@@ -68,6 +68,30 @@ The following information needs to be provided in order to be added:
   [eduvpn-support@lists.geant.org](mailto:eduvpn-support@lists.geant.org), use 
   "_Add [${FQDN}] to Institute Access eduVPN_" as title.
 
+#### Template
+
+Use the following example template in your mail to 
+[eduvpn-support@lists.geant.org](mailto:eduvpn-support@lists.geant.org), please
+update all values for your situation:
+
+Subject: `Add [vpn.example.org] to Institute Access eduVPN`
+
+Body:
+```
+Technical Contact: eduvpn@example.org
+End-user Support Contact: 
+  - support@example.org
+  - +1234567890
+  - https://support.example.org/
+FQDN: vpn.example.org
+Display Name: 
+  en: My Organization
+  nl: Mijn Organisatie
+```
+
+Do **NOT** forget to attach the signed copy of the policy document and the 
+350x150px PNG logo!
+
 ### Secure Internet for NRENs
 
 The primary purpose of "Secure Internet" VPN servers is to be able protect 
@@ -110,3 +134,30 @@ The following information needs to be provided in order to be added:
 * Send your request to 
   [eduvpn-support@lists.geant.org](mailto:eduvpn-support@lists.geant.org), use
   "_Add [${FQDN}] to Secure Internet eduVPN_" as title.
+  
+#### Template
+
+Use the following example template in your mail to 
+[eduvpn-support@lists.geant.org](mailto:eduvpn-support@lists.geant.org), please
+update all values for your situation:
+
+Subject: `Add [vpn.example.org] to Secure Internet eduVPN`
+
+Body:
+```
+Generic Contact: admin@example.org
+Abuse Contact: abuse@example.org
+Technical Contact: eduvpn@example.org
+End-user Support Contact: 
+  - support@example.org
+  - +1234567890
+  - https://support.example.org/
+Information Website: https://www.example.org/services/eduvpn
+FQDN: vpn.example.org
+Country / Region: The Netherlands
+Restrictions: 
+  - in/outbound tcp/25 blocked
+Public Key: O53DTgB956magGaWpVCKtdKIMYqywS3FMAC5fHXdFNg
+```
+
+Do **NOT** forget to attach the signed copy of the policy document!
