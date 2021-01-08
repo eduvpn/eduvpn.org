@@ -34,3 +34,9 @@ To upload to the server (assuming you configured your SSH correctly and have
 the right permissions): 
 
     $ HOST=www.example.org ./upload.sh
+    
+# License
+
+The artwork is for use by the official eduVPN applications/website(s) only. If you want
+to use any of these assets in any other context please contact us on 
+[eduvpn-support@lists.geant.org](mailto:eduvpn-support@lists.geant.org).
