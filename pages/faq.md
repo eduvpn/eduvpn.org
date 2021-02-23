@@ -2,9 +2,9 @@
 title: FAQ
 ---
 
-## Client
+### Client
 
-### I found a bug in the eduVPN client, how can I report it?
+#### I found a bug in the eduVPN client, how can I report it?
 
 All known issues in the eduVPN clients are published on GitHub. Please report 
 issues with detailed information including OS version, client version and 
@@ -16,7 +16,7 @@ included, because this bug information will be public.
 * [Android](https://github.com/eduvpn/android/issues)
 * [Linux](https://github.com/eduvpn/python-eduvpn-client/issues)
 
-### After install, client asks "repair" or "uninstall" (Windows)
+#### After install, client asks "repair" or "uninstall" (Windows)
 
 After installing the eduVPN Windows client, some users experience a "repair or 
 uninstall" notification in the client.
@@ -26,7 +26,7 @@ Sometimes a Windows reboot solves the issue. In other cases, we noticed Windows
 update was not working, so the computer wasn't up to date. Trying to fix the 
 Windows update functionality might solve the issue.
 
-### Virus scanner reports suspicious software when installing the client (Windows)
+#### Virus scanner reports suspicious software when installing the client (Windows)
 
 Make sure you've downloaded the eduVPN client via 
 [https://app.eduvpn.org/](https://app.eduvpn.org/) If this is the case, it is 
@@ -38,7 +38,7 @@ to avoid false positives, we will always upload our new eduVPN clients to
 will become aware of our new software releases. You can always check our 
 binaries yourselves via VirusTotal, just upload the binary and view the report.
 
-### eduVPN client is only available in the App Store for macOS 10.14 and higher (macOS)
+#### eduVPN client is only available in the App Store for macOS 10.14 and higher (macOS)
 
 In order to 'be' in the App Store with the eduVPN client, we had to implement a 
 specific functionality (`NetworkExtensions`). This is only available for macOS 
@@ -53,9 +53,9 @@ create and download a new one. Unfortunately you won't get any descent
 notification about the expiry, it just won't connect. However in the log-file 
 of Tunnelblick you can see the certificate expired.
 
-## Server
+### Server
 
-### Can we have an IPv4 only VPN?
+#### Can we have an IPv4 only VPN?
 
 eduVPN is a full dual-stack IPv6 solution. It was built from the start with 
 support for IPv4 and IPv6. Even if IPv6 is not used "upstream", the client will
